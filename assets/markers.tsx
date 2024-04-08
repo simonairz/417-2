@@ -28,14 +28,16 @@ export const markers = [
       longitude: -87.804362,
       latitudeDelta: 0.01,
       longitudeDelta: 0.01,
-      name: 'destination1'
+      name: 'destination1',
+      audioNumber: '1'
     },
     {
       latitude: 41.953334,
       longitude: -87.803394,
       latitudeDelta: 0.01,
       longitudeDelta: 0.01,
-      name: 'destination2'
+      name: 'destination2',
+      audioNumber: '2'
     },
     {
       latitude: 41.953233,

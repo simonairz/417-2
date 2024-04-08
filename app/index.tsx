@@ -1,10 +1,75 @@
 //Index.tsx
 import React, { useEffect, useRef } from 'react';
-import MapView, { Callout, Marker, PROVIDER_GOOGLE, Region } from 'react-native-maps';
-import { Alert, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { useNavigation } from 'expo-router';
+import MapView, { Callout, Marker, PROVIDER_GOOGLE, Polygon, Region } from 'react-native-maps';
+import { Alert, Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Link, router, useNavigation } from 'expo-router';
 import { markers, mapFocus } from '../assets/markers';
 import  {onClickMapMarker} from './onClickMapMarker';
+import * as Location from 'expo-location';
+import * as geolib from 'geolib';
+
+// Coordinates for Area 1
+let area1 = [
+	{
+		latitude:  41.95330,
+		longitude: -87.804471
+		},
+		{
+			latitude:  41.953499,
+			longitude: -87.804533	
+		},
+		{
+			latitude:  41.953489,
+			longitude: -87.804205,	
+		},
+		{
+			latitude:   41.953296,
+			longitude:-87.804228
+			}
+]
+
+// GET USER LOCATION  for Android Requires Expo Location 2
+
+const userLocation = async() => {
+	//Requesting Permission for Location Android needs this
+	let {status} = await Location.requestForegroundPermissionsAsync();
+	if (status !== 'granted'){
+		Alert.alert("GPS Functionality turned off")
+		console.log(status)
+	}
+	let location = await Location.getCurrentPositionAsync()
+	let setUpMapRegion = () => ({
+		latiude: location.coords.latitude,
+		longitude: location.coords.longitude,
+		latitudeDelta: 0.01,
+		longitudeDelta: 0.01
+	});
+	let userCoords = location.coords
+
+	// Checking if User is in Area
+	function isinsidePolygon(userlocation){
+	  let bol= geolib.isPointInPolygon(userlocation, area1);
+		console.log(bol)
+		// IF in location alert if they want to hear the audiob
+		if(bol){
+			Alert.alert("Audio tour?", "Would You Like to hear the tour for this Area" , [
+				{text: "Yes", onPress: ()=> router.navigate('/audio1')},
+				{text: "No"}
+			]);
+		}
+
+	}
+	isinsidePolygon(userCoords)
+	console.log(userCoords)
+
+}
+userLocation()	
+
+
+
+
+
+
 
 const INITIAL_REGION = {
 	latitude: 37.33,
@@ -30,19 +95,22 @@ export default function App() {
 	}, []);
 
 	const focusMap = () => {
-		const GreenBayStadium = {
-			latitude: 44.5013,
-			longitude: -88.0622,
-			latitudeDelta: 0.1,
-			longitudeDelta: 0.1
+		const dunningReadFocus = {
+         latitude: 41.953370,
+	     longitude: -87.804362,
+	    latitudeDelta: 0.01,
+	    longitudeDelta: 0.01,
 		};
 
-		mapRef.current?.animateToRegion(GreenBayStadium);
-		// mapRef.current?.animateCamera({ center: GreenBayStadium, zoom: 10 }, { duration: 2000 });
+		mapRef.current?.animateToRegion(dunningReadFocus);
+
 	};
 
 	const onMarkerSelected = (marker: any) => {
-		Alert.alert(marker.name);
+		Alert.alert(marker.name, "Would You Like to hear the tour for " + marker.name, [
+			{text: "Yes", onPress: ()=> router.navigate('/audio' + marker.audioNumber)},
+			{text: "No"}
+		]);
 	};
 
 	const calloutPressed = (ev: any) => {
@@ -58,18 +126,18 @@ export default function App() {
 			<MapView
 				style={StyleSheet.absoluteFillObject}
 				initialRegion={mapFocus}
-				showsUserLocation
-				showsMyLocationButton
 				provider={PROVIDER_GOOGLE}
 				ref={mapRef}
 				onRegionChangeComplete={onRegionChange}
+				showsUserLocation
+				showsMyLocationButton
 			>
 				{markers.map((marker, index) => (
 					<Marker
 						key={index}
-						title={marker.name}
+						title={marker.name} 
 						coordinate={marker}
-						onPress={() => onClickMapMarker(marker, index)}
+						onPress={() => onMarkerSelected(marker)}
 					>
 						{/* <Callout onPress={calloutPressed}>
 							<View style={{ padding: 10 }}>
@@ -78,6 +146,15 @@ export default function App() {
 						</Callout> */}
 					</Marker>
 				))}
+
+				
+				<Polygon
+				// VISUAL OF AREA POLYGONS
+				strokeColor='red'
+				fillColor='blue'
+				strokeWidth={2}
+				coordinates={area1}
+				/>
 			</MapView>
 		</View>
 	);
