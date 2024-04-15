@@ -13,15 +13,15 @@ function audio1(props) {
 
     return (
        <View style={styles.container}>
-                <Text style={styles.text}>
-                Indigenous Connections
+        <Text style={styles.text}>
+        Bringing Back An Oak Savannah
         </Text>
         <Text style={styles.text}>
-            Audio2
+            Tap to View Media Controls
         </Text>
         <Video ref={video}
         style={styles.video} 
-        source={require("../assets/music/inTheEnd.mp3")}
+        source={require("../assets/music/crawling.mp3")}
         resizeMode={ResizeMode.CONTAIN}
         useNativeControls={showControls}
         onPlaybackStatusUpdate={setStatus}

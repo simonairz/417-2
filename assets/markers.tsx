@@ -24,62 +24,68 @@ export const mapFocus ={
 };
 export const markers = [
     {
-      latitude: 41.953370,
-      longitude: -87.804362,
+      latitude: 41.954111,
+      longitude: -87.796750,
       latitudeDelta: 0.01,
       longitudeDelta: 0.01,
-      name: 'destination1',
+      name: 'Nesewin sculpture',
       audioNumber: '1'
     },
     {
-      latitude: 41.953334,
-      longitude: -87.803394,
+      latitude: 41.953722,
+      longitude: -87.796806,
       latitudeDelta: 0.01,
       longitudeDelta: 0.01,
-      name: 'destination2',
+      name: 'Indigenous connections',
       audioNumber: '2'
     },
     {
-      latitude: 41.953233,
-      longitude: -87.801457,
+      latitude: 41.952917,
+      longitude:  -87.797583,
       latitudeDelta: 0.01,
       longitudeDelta: 0.01,
-      name: 'destination3'
+      name: 'The community saves a treasure',
+      audioNumber: '3'
     },
     {
-      latitude: 41.953830,
-      longitude: -87.802858,
+      latitude: 41.952972,
+      longitude: -87.800167,
       latitudeDelta: 0.01,
       longitudeDelta: 0.01,
-      name: 'destination4'
+      name: 'Time travel to the future',
+      audioNumber: '4'
     },
     {
-      latitude: 41.954025,
-      longitude: -87.801880,
+      latitude: 41.953306,
+      longitude:  -87.801472,
       latitudeDelta: 0.01,
       longitudeDelta: 0.01,
-      name: 'destination5'
+      name: 'The life above, below, and around you',
+      audioNumber: '5'
     },
     {
-      latitude: 41.953619,
-      longitude: -87.801301,
+      latitude: 41.953194,
+      longitude: -87.804278,
       latitudeDelta: 0.01,
       longitudeDelta: 0.01,
-      name: 'destination6'
+      name: 'Time travel to the distant past',
+      audioNumber: '6'
     },
     {
-      latitude: 41.953044,
-      longitude: -87.800971,
+      latitude: 41.953972,
+      longitude: -87.802056,
       latitudeDelta: 0.01,
       longitudeDelta: 0.01,
-      name: 'destination7'
+      name: 'Bringing back an oak savannah',
+      audioNumber: '7'
     },
     {
-      latitude: 41.952968,
-      longitude: -87.799834,
+      latitude: 41.954111,
+      longitude: -87.801472,
       latitudeDelta: 0.01,
       longitudeDelta: 0.01,
-      name: 'destination8'
+      name: 'Going with the flow',
+      audioNumber: '8'
     }
   ];
   

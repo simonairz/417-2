@@ -14,6 +14,9 @@ function audio1(props) {
 
     return (
        <View style={styles.container}>
+          <Text style={styles.text}>
+          Nesewin Sculpture
+        </Text>
         <Text style={styles.text}>
             Audio1: Tap to View Controls
         </Text>
