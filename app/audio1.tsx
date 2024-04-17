@@ -1,57 +1,62 @@
-
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
-import {View, Text, StyleSheet } from 'react-native';
-import { ResizeMode, Video } from 'expo-av';
+import { View, Text, StyleSheet, Button } from 'react-native';
+import { Video } from 'expo-av';
 
+function Audio1(props) {
+  const video = React.useRef(null);
+  const [showControls, setShowControls] = useState(true);
 
-function audio1(props) {
+  const toggleControls = () => {
+    setShowControls(!showControls);
+  };
 
-    const video = React.useRef(null)
-    const[status, setStatus] = React.useState({})
-    const [showControls, setShowControls] =  useState(true)
-
-
-    return (
-       <View style={styles.container}>
-          <Text style={styles.text}>
-          Nesewin Sculpture
-        </Text>
-        <Text style={styles.text}>
-            Audio1: Tap to View Controls
-        </Text>
-        <Video ref={video}
-        style={styles.video} 
-        source={require("../assets/music/Papercut.mp3")}
-        resizeMode={ResizeMode.CONTAIN}
-        useNativeControls={showControls}
-        onPlaybackStatusUpdate={setStatus}
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Nesewin Sculpture</Text>
+      <Button
+        title="Audio1: Click Below for Audio tour"
+        onPress={toggleControls}
+        color="green" // Customize button color
+      />
+      <View style={styles.videoContainer}>
+        <Video
+          ref={video}
+          style={styles.video}
+          source={require("../assets/music/Papercut.mp3")}
+          useNativeControls={showControls}
         />
-        <StatusBar style='auto'/>
-
-
-  
-       </View>
-    );
+      </View>
+      <StatusBar style='auto' />
+    </View>
+  );
 }
 
-export default audio1;
+export default Audio1;
 
 const styles = StyleSheet.create({
-    container:{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems:'center'
-    },
-    text:{
-        alignItems: "center",
-        color: "blue",
-        fontSize: 23,
-        marginTop: 20
-    },
-    video:{
-        flex:1,
-        width: "100%"
-    }
-    
-})
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#8a9a87', // Forest green background
+    paddingHorizontal: 20,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    marginBottom: 10,
+    color: '#fff', // White text color
+  },
+  videoContainer: {
+    width: '100%',
+    aspectRatio: 16 / 9, // Assuming a standard video aspect ratio
+    borderRadius: 20,
+    overflow: 'hidden',
+    elevation: 6, // Add shadow to give depth
+    backgroundColor: '#5d6d5d', // Darker green background
+  },
+  video: {
+    flex: 1,
+  },
+});
