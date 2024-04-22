@@ -14,11 +14,13 @@ function Audio1(props) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Nesewin Sculpture</Text>
-      <Button
-        title="Audio1: Click Below for Audio tour"
-        onPress={toggleControls}
-        color="green" // Customize button color
-      />
+      <View style={styles.buttonContainer}>
+        <Button
+          title="Audio1: Click Below for Audio tour"
+          onPress={toggleControls}
+          color="#3CB371" // Adjusted button color
+        />
+      </View>
       <View style={styles.videoContainer}>
         <Video
           ref={video}
@@ -39,22 +41,25 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#8a9a87', // Forest green background
+    backgroundColor: '#8a9a87', 
     paddingHorizontal: 20,
   },
   title: {
-    fontSize: 28,
+    fontSize: 32,
     fontWeight: 'bold',
-    marginBottom: 10,
-    color: '#fff', // White text color
+    marginBottom: 20, 
+    color: '#fff', 
+  },
+  buttonContainer: {
+    marginBottom: 20, 
   },
   videoContainer: {
-    width: '100%',
-    aspectRatio: 16 / 9, // Assuming a standard video aspect ratio
+    width: '90%', 
+    aspectRatio: 16 / 9, 
     borderRadius: 20,
     overflow: 'hidden',
-    elevation: 6, // Add shadow to give depth
-    backgroundColor: '#5d6d5d', // Darker green background
+    elevation: 6, 
+    backgroundColor: '#5d6d5d', 
   },
   video: {
     flex: 1,

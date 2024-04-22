@@ -1,11 +1,12 @@
 import { Link, router } from 'expo-router';
 import React from 'react';
-import { SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 function index(props) {
     return (
         <LinearGradient colors={['#87BB6A','#1B5E20']} style={styles.background}>
+            <Image source={require('../assets/images/exploreLinks/logo.png')} style={styles.logo} />
             <Text style={styles.title}>
                 DUNNING READ NATURAL AREA
             </Text>
@@ -30,12 +31,18 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    logo: {
+        width: 200, // Adjust the width and height as needed
+        height: 200,
+        marginBottom: 20,
+        resizeMode: 'contain', // Adjust the resizeMode as needed
+    },
     title: {
         fontSize: 36,
         fontWeight: "bold",
         color: '#FFFFFF',
         marginBottom: 20,
-        marginTop: 50, // Adjusted marginTop to make the title stand out at the top
+        marginTop: 10, // Adjusted marginTop to make the title stand out at the top
     },
     audioNavigate: {
         backgroundColor: '#4CAF50',
