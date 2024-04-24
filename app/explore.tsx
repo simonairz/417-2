@@ -9,26 +9,28 @@ function explore(_props: any) {
       colors={["dodgerblue", "aqua", "green"]}
       style={styles.background}
     >
-      <Text style={styles.title}> Learn About Our Wild Life</Text>
-      <Link style={styles.navigator} href={"/"}>
-        {" "}
-        Back To Home{" "}
-      </Link>
+      <Text style={styles.title}> Explore Wildlife </Text>
+
       <Link style={styles.navigator} href={"/birdInfo"}>
         {" "}
         Birds{" "}
       </Link>
+      <Link style={styles.navigator} href={"/animalInfo"}>
+        {" "}
+        Animals{" "}
+      </Link>
       <Link style={styles.navigator} href={"/insectInfo"}>
         {" "}
-        Insects{" "}
+        Bugs{" "}
       </Link>
       <Link style={styles.navigator} href={"/plantInfo"}>
         {" "}
-        Plantlife{" "}
+        Plants{" "}
       </Link>
-      <Link style={styles.navigator} href={"/animalInfo"}>
+
+      <Link style={styles.navigator} href={"/"}>
         {" "}
-        Other Animals{" "}
+        Back To Home Page{" "}
       </Link>
     </LinearGradient>
   );
@@ -41,8 +43,9 @@ const styles = StyleSheet.create({
   },
   title: {
     marginTop: 20,
-    fontSize: 23,
+    fontSize: 20,
     fontWeight: "bold",
+    color: "darkgreen",
   },
   imageLink: {
     height: 250,
@@ -53,11 +56,11 @@ const styles = StyleSheet.create({
     backgroundColor: "darkblue",
     color: "white",
     paddingVertical: 8,
-    fontSize: 20,
+    fontSize: 15,
     fontWeight: "bold",
     borderRadius: 15,
     marginTop: 35,
-    width: 250,
+    width: 200,
     textAlign: "center",
   },
 });

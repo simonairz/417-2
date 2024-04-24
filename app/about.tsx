@@ -1,21 +1,16 @@
 import React from "react";
-import {
-  View,
-  SafeAreaView,
-  Text,
-  StyleSheet,
-  ImageBackground,
-  ScrollView,
-} from "react-native";
-import { Link, router } from "expo-router";
+import { Text, ImageBackground, ScrollView } from "react-native";
+import { Link } from "expo-router";
+import { styles } from "./about1";
 
-function about(_props: any) {
+export function about(_props: any) {
   return (
     <ImageBackground
       style={styles.background}
       source={require("../assets/images/treeBackground.jpg")}
     >
       <Text style={styles.title}>DUNNING READ NATURAL AREA</Text>
+      <Text style={styles.title}>About Us</Text>
 
       <ScrollView
         style={styles.scrollView}
@@ -43,7 +38,7 @@ function about(_props: any) {
           the years, numerous local stakeholders have contributed to the
           betterment of the natural area. We collaborate with the following
           partners whenever possible, and are appreciative of their
-          contributions to the site:
+          contributions to the site.
         </Text>
 
         <Text style={styles.missionHeader}> Volunteer With Us</Text>
@@ -70,54 +65,4 @@ function about(_props: any) {
     </ImageBackground>
   );
 }
-
-const styles = StyleSheet.create({
-  background: {
-    flex: 1,
-    alignItems: "center",
-  },
-
-  title: {
-    marginTop: 15,
-    fontSize: 23,
-    fontWeight: "bold",
-    color: "white",
-    alignItems: "center",
-  },
-  missionHeader: {
-    marginTop: 15,
-    color: "yellow",
-    fontWeight: "bold",
-    fontSize: 20,
-    alignItems: "center",
-  },
-  missionContent: {
-    marginTop: 10,
-    marginHorizontal: 15,
-    color: "white",
-    fontSize: 18,
-    textAlign: "left",
-    alignItems: "center",
-  },
-  volunteerLink: {
-    fontWeight: "bold",
-    color: "red",
-    fontSize: 15,
-    textDecorationLine: "underline",
-  },
-
-  indexNavigator: {
-    backgroundColor: "darkblue",
-    color: "white",
-    paddingVertical: 8,
-    paddingHorizontal: 8,
-    fontSize: 16,
-    fontWeight: "bold",
-    borderRadius: 15,
-    marginTop: 15,
-    textAlign: "center",
-    alignItems: "center",
-    width: 350,
-  },
-});
 export default about;
