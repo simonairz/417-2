@@ -1,11 +1,17 @@
 //_layout.tsx
-import React from 'react';
-import { Stack } from 'expo-router';
+import React from "react";
+import { Stack } from "expo-router";
 
 const Layout = () => (
-	<Stack>
-		<Stack.Screen name="index" options={{ title: 'Home' }} />
-	</Stack>
+  <Stack>
+    <Stack.Screen name="index" options={{ title: "Dunning Read" }} />
+    <Stack.Screen name="about" options={{ title: "About Us " }} />
+    <Stack.Screen name="explore" options={{ title: "Explore WildLife " }} />
+    <Stack.Screen name="birdInfo" options={{ title: "Birds" }} />
+    <Stack.Screen name="animalInfo" options={{ title: "Animals" }} />
+    <Stack.Screen name="insectInfo" options={{ title: "Bugs" }} />
+    <Stack.Screen name="plantInfo" options={{ title: "Plants" }} />
+  </Stack>
 );
 
 export default Layout;

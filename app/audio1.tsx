@@ -1,9 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
-import React, { useState } from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
-import { Video } from 'expo-av';
+import { StatusBar } from "expo-status-bar";
+import React, { useState } from "react";
+import { View, Text, StyleSheet, Button } from "react-native";
+import { Video } from "expo-av";
 
-function Audio1(props) {
+function Audio1(_props: any) {
   const video = React.useRef(null);
   const [showControls, setShowControls] = useState(true);
 
@@ -29,7 +29,7 @@ function Audio1(props) {
           useNativeControls={showControls}
         />
       </View>
-      <StatusBar style='auto' />
+      <StatusBar style="auto" />
     </View>
   );
 }
@@ -39,27 +39,27 @@ export default Audio1;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#8a9a87', 
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#8a9a87",
     paddingHorizontal: 20,
   },
   title: {
     fontSize: 32,
-    fontWeight: 'bold',
-    marginBottom: 20, 
-    color: '#fff', 
+    fontWeight: "bold",
+    marginBottom: 20,
+    color: "#fff",
   },
   buttonContainer: {
-    marginBottom: 20, 
+    marginBottom: 20,
   },
   videoContainer: {
-    width: '90%', 
-    aspectRatio: 16 / 9, 
+    width: "90%",
+    aspectRatio: 16 / 9,
     borderRadius: 20,
-    overflow: 'hidden',
-    elevation: 6, 
-    backgroundColor: '#5d6d5d', 
+    overflow: "hidden",
+    elevation: 6,
+    backgroundColor: "#5d6d5d",
   },
   video: {
     flex: 1,

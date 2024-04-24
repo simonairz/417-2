@@ -16,7 +16,7 @@ import tenthBirdImage from '../assets/images/exploreLinks/Cardinal.jpg'; // Add 
 import eleventhBirdImage from '../assets/images/exploreLinks/Redtail.jpg'; // Add the path to the eleventh bird image
 import twelfthBirdImage from '../assets/images/exploreLinks/Redwing.jpg'; // Add the path to the twelfth bird image
 
-function Explore(props) {
+function Explore(_props: any) {
     const [showAmericanCrowInfo, setShowAmericanCrowInfo] = useState(false);
     const [showAnotherBirdInfo, setShowAnotherBirdInfo] = useState(false);
     const [showThirdBirdInfo, setShowThirdBirdInfo] = useState(false);
