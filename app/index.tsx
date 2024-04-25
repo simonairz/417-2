@@ -68,7 +68,8 @@ const styles = StyleSheet.create({
     backgroundColor: "lightgreen",
     paddingVertical: 18,
     paddingHorizontal: 18,
-    borderRadius: 50,
+    borderRadius: 30,
+    overflow: "hidden",
     marginBottom: 20,
   },
   audioNavigateText: {
@@ -82,6 +83,7 @@ const styles = StyleSheet.create({
     paddingVertical: 18,
     paddingHorizontal: 18,
     borderRadius: 30,
+    overflow: "hidden",
     marginBottom: 20,
   },
   exploreNavigateText: {
@@ -95,6 +97,7 @@ const styles = StyleSheet.create({
     paddingVertical: 16,
     paddingHorizontal: 16,
     borderRadius: 30,
+    overflow: "hidden",
     marginBottom: 20,
     //flexDirection: "row",
     // marginBottom: 20,
