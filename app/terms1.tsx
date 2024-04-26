@@ -1,5 +1,4 @@
 import { View, SafeAreaView, StyleSheet } from "react-native";
-import { terms } from "./terms";
 
 export const styles = StyleSheet.create({
   background: {
@@ -60,5 +59,3 @@ export const styles = StyleSheet.create({
     paddingRight: 50,
   },
 });
-
-export default terms;

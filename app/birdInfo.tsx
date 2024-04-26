@@ -48,12 +48,15 @@ export const styles = StyleSheet.create({
     padding: 20,
     borderRadius: 10,
     alignItems: "center",
+    overflow: "hidden",
   },
+  //picture's title
   modalTitle: {
-    fontSize: 20,
+    fontSize: 25,
     fontWeight: "bold",
     marginBottom: 10,
   },
+  //picture's size
   modalImage: {
     width: 200, // Adjust the width as needed
     height: 200, // Adjust the height as needed
@@ -64,14 +67,14 @@ export const styles = StyleSheet.create({
   modalText: {
     fontSize: 16,
     fontWeight: "bold",
-    textAlign: "justify",
+    textAlign: "left",
   },
   modalCloseButton: {
     marginTop: 20,
     backgroundColor: "darkblue",
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 10,
+    paddingVertical: 14,
+    paddingHorizontal: 14,
+    borderRadius: 15,
   },
   modalCloseText: {
     color: "white",
@@ -81,12 +84,12 @@ export const styles = StyleSheet.create({
   navigator: {
     backgroundColor: "black",
     color: "white",
-    paddingVertical: 8,
+    //paddingVertical: 8,
     fontSize: 15,
     fontWeight: "bold",
-    borderRadius: 15,
+    // borderRadius: 15,
     marginTop: 20,
-    width: 200,
+    // width: 200,
     textAlign: "center",
   },
 });

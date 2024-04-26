@@ -3,7 +3,7 @@ import { Text, ImageBackground, ScrollView } from "react-native";
 import { Link } from "expo-router";
 import { styles } from "./about1";
 
-export function about(_props: any) {
+export function About(_props: any) {
   return (
     <ImageBackground
       style={styles.background}
@@ -65,4 +65,4 @@ export function about(_props: any) {
     </ImageBackground>
   );
 }
-export default about;
+export default About;

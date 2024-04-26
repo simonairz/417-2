@@ -1,5 +1,5 @@
 import { View, SafeAreaView, StyleSheet } from "react-native";
-import { about } from "./about";
+//import { About } from "./about1";
 
 export const styles = StyleSheet.create({
   background: {
@@ -61,4 +61,4 @@ export const styles = StyleSheet.create({
     paddingRight: 50,
   },
 });
-export default about;
+//export default About;
