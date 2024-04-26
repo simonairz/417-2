@@ -42,10 +42,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   title: {
-    marginTop: 20,
-    fontSize: 20,
+    marginTop: 25,
+    fontSize: 25,
     fontWeight: "bold",
-    color: "darkgreen",
+    color: "black",
   },
   imageLink: {
     height: 250,

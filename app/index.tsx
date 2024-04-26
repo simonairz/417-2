@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
   logo: {
     width: 120, // Adjust the width and height as needed
     height: 120,
-    marginBottom: 20,
+    marginBottom: 18,
     marginTop: 18,
     resizeMode: "contain", // Adjust the resizeMode as needed
   },
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "lightgreen",
     textAlign: "center",
-    marginBottom: 40,
+    marginBottom: 30,
     marginTop: 10, // Adjusted marginTop to make the title stand out at the top
   },
   audioNavigate: {
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     borderRadius: 30,
     overflow: "hidden",
-    marginBottom: 20,
+    marginBottom: 15,
     //flexDirection: "row",
     // marginBottom: 20,
   },
@@ -111,22 +111,22 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   privacyContainer: {
-    marginBottom: 5,
-    marginTop: 5,
+    marginBottom: 2,
+    marginTop: 2,
     //flexDirection: "row",
   },
 
   privacyText: {
     color: "black",
     textDecorationLine: "underline",
-    fontSize: 15,
+    fontSize: 12,
     fontWeight: "bold",
     // marginRight: 10,
   },
 
   termsContainer: {
-    marginBottom: 5,
-    marginTop: 5,
+    marginBottom: 2,
+    marginTop: 2,
     alignItems: "flex-start",
     //flexDirection: "row",
   },
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
   termsText: {
     color: "black",
     textDecorationLine: "underline",
-    fontSize: 15,
+    fontSize: 12,
     fontWeight: "bold",
     // marginRight: 10,
   },
