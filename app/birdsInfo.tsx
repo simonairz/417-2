@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "expo-router";
-import { styles } from "./birdInfo";
 import {
+  SafeAreaView,
+  StyleSheet,
   Text,
   Image,
   TouchableOpacity,
@@ -11,8 +12,8 @@ import {
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 
-const americanCrowImage = require("../assets/images/exploreLinks/Amcrow.jpg");
-const anotherBirdImage = require("../assets/images/exploreLinks/Amgold.jpg");
+const firstBirdImage = require("../assets/images/exploreLinks/Amcrow.jpg");
+const secondBirdImage = require("../assets/images/exploreLinks/Amgold.jpg");
 const thirdBirdImage = require("../assets/images/exploreLinks/Amrobin.jpg");
 const fourthBirdImage = require("../assets/images/exploreLinks/Baltimore.jpg");
 const fifthBirdImage = require("../assets/images/exploreLinks/Black.jpg");
@@ -25,8 +26,8 @@ const eleventhBirdImage = require("../assets/images/exploreLinks/Redtail.jpg");
 const twelfthBirdImage = require("../assets/images/exploreLinks/Redwing.jpg");
 
 export function Explore(_props: any) {
-  const [showAmericanCrowInfo, setShowAmericanCrowInfo] = useState(false);
-  const [showAnotherBirdInfo, setShowAnotherBirdInfo] = useState(false);
+  const [showFirstBirdInfo, setShowFirstBirdInfo] = useState(false);
+  const [showSecondBirdInfo, setShowSecondBirdInfo] = useState(false);
   const [showThirdBirdInfo, setShowThirdBirdInfo] = useState(false);
   const [showFourthBirdInfo, setShowFourthBirdInfo] = useState(false);
   const [showFifthBirdInfo, setShowFifthBirdInfo] = useState(false);
@@ -38,12 +39,12 @@ export function Explore(_props: any) {
   const [showEleventhBirdInfo, setShowEleventhBirdInfo] = useState(false);
   const [showTwelfthBirdInfo, setShowTwelfthBirdInfo] = useState(false);
 
-  const handleAmericanCrowPress = () => {
-    setShowAmericanCrowInfo(true);
+  const handleFirstBirdPress = () => {
+    setShowFirstBirdInfo(true);
   };
 
-  const handleAnotherBirdPress = () => {
-    setShowAnotherBirdInfo(true);
+  const handleSecondBirdPress = () => {
+    setShowSecondBirdInfo(true);
   };
 
   const handleThirdBirdPress = () => {
@@ -87,8 +88,8 @@ export function Explore(_props: any) {
   };
 
   const closeModal = () => {
-    setShowAmericanCrowInfo(false);
-    setShowAnotherBirdInfo(false);
+    setShowFirstBirdInfo(false);
+    setShowSecondBirdInfo(false);
     setShowThirdBirdInfo(false);
     setShowFourthBirdInfo(false);
     setShowFifthBirdInfo(false);
@@ -111,16 +112,10 @@ export function Explore(_props: any) {
         style={styles.scrollView}
         showsVerticalScrollIndicator={false}
       >
-        <TouchableOpacity
-          style={styles.button}
-          onPress={handleAmericanCrowPress}
-        >
+        <TouchableOpacity style={styles.button} onPress={handleFirstBirdPress}>
           <Text style={styles.buttonText}>American Crow</Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={handleAnotherBirdPress}
-        >
+        <TouchableOpacity style={styles.button} onPress={handleSecondBirdPress}>
           <Text style={styles.buttonText}>American GoldFinch</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleThirdBirdPress}>
@@ -162,25 +157,25 @@ export function Explore(_props: any) {
         >
           <Text style={styles.buttonText}>Red Winged Black Bird</Text>
         </TouchableOpacity>
-
-        <Link style={styles.navigator} href={"/"}>
-          {" "}
-          Back To Home Page{" "}
-        </Link>
       </ScrollView>
+
+      <Link style={styles.navigator} href={"/"}>
+        {" "}
+        Back To Home Page{" "}
+      </Link>
 
       {/* Modal to display American Crow information */}
       <Modal
         animationType="slide"
         transparent={true}
-        visible={showAmericanCrowInfo}
+        visible={showFirstBirdInfo}
         onRequestClose={closeModal}
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Text style={styles.modalTitle}>American Crow</Text>
             {/* Add the American Crow image */}
-            <Image source={americanCrowImage} style={styles.modalImage} />
+            <Image source={firstBirdImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
               The American crow is a large, intelligent bird known for its
               adaptability and distinctive cawing sound. It is found throughout
@@ -200,14 +195,14 @@ export function Explore(_props: any) {
       <Modal
         animationType="slide"
         transparent={true}
-        visible={showAnotherBirdInfo}
+        visible={showSecondBirdInfo}
         onRequestClose={closeModal}
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Text style={styles.modalTitle}>American Goldfinch</Text>
             {/* Add the Another Bird image */}
-            <Image source={anotherBirdImage} style={styles.modalImage} />
+            <Image source={secondBirdImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
               The American Goldfinch is often found in open areas near thistle
               plants. Listen for its flight call, which sounds like,
@@ -496,3 +491,102 @@ export function Explore(_props: any) {
     </LinearGradient>
   );
 }
+
+const styles = StyleSheet.create({
+  background: {
+    flex: 1,
+    alignItems: "center",
+  },
+  scrollView: {
+    backgroundColor: " ",
+    marginHorizontal: 20,
+  },
+
+  title: {
+    marginTop: 25,
+    marginBottom: 10,
+    fontSize: 23,
+    fontWeight: "bold",
+    textAlign: "center",
+  },
+
+  button: {
+    backgroundColor: "blue",
+    color: "white",
+    paddingVertical: 10,
+
+    fontSize: 13,
+    //fontWeight: "bold",
+    borderRadius: 15,
+    marginTop: 25,
+    width: 200,
+    textAlign: "center",
+    overflow: "hidden",
+    //height: 70,
+    //width: 200,
+  },
+  buttonText: {
+    color: "white",
+    fontSize: 15,
+    fontWeight: "bold",
+    textAlign: "center",
+    maxWidth: "100%",
+    overflow: "hidden",
+  },
+  modalContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+  },
+  modalContent: {
+    backgroundColor: "lightpink",
+    padding: 20,
+    borderRadius: 10,
+    alignItems: "center",
+    overflow: "hidden",
+  },
+  //picture's title
+  modalTitle: {
+    fontSize: 25,
+    fontWeight: "bold",
+    marginBottom: 10,
+  },
+  //picture's size
+  modalImage: {
+    width: 200, // Adjust the width as needed
+    height: 200, // Adjust the height as needed
+    resizeMode: "cover",
+    borderRadius: 10,
+    marginBottom: 10,
+  },
+  modalText: {
+    fontSize: 16,
+    fontWeight: "bold",
+    textAlign: "left",
+  },
+  modalCloseButton: {
+    marginTop: 20,
+    backgroundColor: "blue",
+    paddingVertical: 14,
+    paddingHorizontal: 14,
+    borderRadius: 15,
+  },
+  modalCloseText: {
+    color: "white",
+    fontSize: 16,
+    fontWeight: "bold",
+  },
+  navigator: {
+    backgroundColor: "lightblue",
+    color: "black",
+    paddingVertical: 12,
+    paddingHorizontal: 12,
+    borderRadius: 20,
+    overflow: "hidden",
+    marginBottom: 20,
+    marginTop: 10,
+  },
+});
+
+export default Explore;

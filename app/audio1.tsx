@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
 import { Video } from "expo-av";
 
-function Audio1(props: any) {
+function Audio1(_props: any) {
   const video = React.useRef(null);
   const [showControls, setShowControls] = useState(true);
 
@@ -16,9 +16,9 @@ function Audio1(props: any) {
       <Text style={styles.title}>Nesewin Sculpture</Text>
       <View style={styles.buttonContainer}>
         <Button
-          title="Audio1: Click Below for Audio tour"
+          title="Audio#1: Click below to start listening."
           onPress={toggleControls}
-          color="#3CB371" // Adjusted button color
+          color="black" // Adjusted button color
         />
       </View>
       <View style={styles.videoContainer}>
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   title: {
-    fontSize: 32,
+    fontSize: 25,
     fontWeight: "bold",
     marginBottom: 20,
     color: "#fff",

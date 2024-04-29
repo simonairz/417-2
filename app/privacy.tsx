@@ -1,9 +1,8 @@
 import React from "react";
-import { Text, ImageBackground, ScrollView } from "react-native";
+import { Text, ImageBackground, StyleSheet, ScrollView } from "react-native";
 import { Link } from "expo-router";
-import { styles } from "./privacy1";
 
-export function privacy(_props: any) {
+export function Explore(_props: any) {
   return (
     <ImageBackground
       style={styles.background}
@@ -127,13 +126,69 @@ export function privacy(_props: any) {
           Privacy Policy at any time without notice by posting the revision on
           our site.
         </Text>
-        <Link style={styles.indexNavigator} href={"/"}>
-          {" "}
-          Back To Home Page{" "}
-        </Link>
       </ScrollView>
+      <Link style={styles.indexNavigator} href={"/"}>
+        {" "}
+        Back To Home Page{" "}
+      </Link>
     </ImageBackground>
   );
 }
 
-export default privacy;
+const styles = StyleSheet.create({
+  background: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  scrollView: {
+    backgroundColor: "lightgreen",
+    marginHorizontal: 20,
+  },
+
+  title: {
+    marginTop: 10,
+    marginBottom: 10,
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "white",
+    alignItems: "center",
+  },
+  safeHeader: {
+    marginTop: 10,
+    color: "black",
+    fontWeight: "bold",
+    fontSize: 15,
+    textAlign: "center",
+    alignItems: "center",
+    textDecorationLine: "underline",
+  },
+  safeContent: {
+    marginTop: 10,
+    marginHorizontal: 15,
+    color: "black",
+    //fontWeight: "bold",
+    fontSize: 15,
+    textAlign: "left",
+    alignItems: "center",
+  },
+
+  clickLink: {
+    fontWeight: "bold",
+    color: "red",
+    fontSize: 15,
+    textDecorationLine: "underline",
+  },
+  indexNavigator: {
+    backgroundColor: "lightblue",
+    color: "black",
+    paddingVertical: 12,
+    paddingHorizontal: 12,
+    borderRadius: 20,
+    overflow: "hidden",
+    marginBottom: 20,
+    marginTop: 10,
+  },
+});
+
+export default Explore;

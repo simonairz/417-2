@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "expo-router";
-import { styles } from "./animalInfo";
 import {
   Text,
   Image,
   TouchableOpacity,
   Modal,
+  StyleSheet,
   View,
   ScrollView,
 } from "react-native";
@@ -205,12 +205,12 @@ export function Explore(_props: any) {
         <TouchableOpacity style={styles.button} onPress={handleButtonPress12}>
           <Text style={styles.buttonText}>Skunk</Text>
         </TouchableOpacity>
-
-        <Link style={styles.navigator} href={"/"}>
-          {" "}
-          Back To Home Page{" "}
-        </Link>
       </ScrollView>
+
+      <Link style={styles.navigator} href={"/"}>
+        {" "}
+        Back To Home Page{" "}
+      </Link>
 
       {/* Modal to display American Crow information */}
       <Modal
@@ -219,7 +219,7 @@ export function Explore(_props: any) {
         visible={showPopup1}
         onRequestClose={handleClosePopup1}
       >
-        <View style={styles.modal}>
+        <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Image source={animal1Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
@@ -228,10 +228,10 @@ export function Explore(_props: any) {
               and 40 pounds.
             </Text>
             <TouchableOpacity
-              style={styles.closeButton}
+              style={styles.modalCloseButton}
               onPress={handleClosePopup1}
             >
-              <Text style={styles.closeButtonText}>Close</Text>
+              <Text style={styles.modalCloseText}>Close</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -244,7 +244,7 @@ export function Explore(_props: any) {
         visible={showPopup2}
         onRequestClose={handleClosePopup2}
       >
-        <View style={styles.modal}>
+        <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Image source={animal2Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
@@ -252,10 +252,10 @@ export function Explore(_props: any) {
               foot long. You may find it under rocks or logs.
             </Text>
             <TouchableOpacity
-              style={styles.closeButton}
+              style={styles.modalCloseButton}
               onPress={handleClosePopup2}
             >
-              <Text style={styles.closeButtonText}>Close</Text>
+              <Text style={styles.modalCloseText}>Close</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -268,7 +268,7 @@ export function Explore(_props: any) {
         visible={showPopup3}
         onRequestClose={handleClosePopup3}
       >
-        <View style={styles.modal}>
+        <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Image source={animal3Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
@@ -277,10 +277,10 @@ export function Explore(_props: any) {
               areas and near brush and shrubs.
             </Text>
             <TouchableOpacity
-              style={styles.closeButton}
+              style={styles.modalCloseButton}
               onPress={handleClosePopup3}
             >
-              <Text style={styles.closeButtonText}>Close</Text>
+              <Text style={styles.modalCloseText}>Close</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -293,7 +293,7 @@ export function Explore(_props: any) {
         visible={showPopup4}
         onRequestClose={handleClosePopup4}
       >
-        <View style={styles.modal}>
+        <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Image source={animal4Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
@@ -302,10 +302,10 @@ export function Explore(_props: any) {
               leaves, and nuts, and builds leaf nests in trees.
             </Text>
             <TouchableOpacity
-              style={styles.closeButton}
+              style={styles.modalCloseButton}
               onPress={handleClosePopup4}
             >
-              <Text style={styles.closeButtonText}>Close</Text>
+              <Text style={styles.modalCloseText}>Close</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -318,7 +318,7 @@ export function Explore(_props: any) {
         visible={showPopup5}
         onRequestClose={handleClosePopup5}
       >
-        <View style={styles.modal}>
+        <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Image source={animal5Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
@@ -327,10 +327,10 @@ export function Explore(_props: any) {
               leaves, and insects.
             </Text>
             <TouchableOpacity
-              style={styles.closeButton}
+              style={styles.modalCloseButton}
               onPress={handleClosePopup5}
             >
-              <Text style={styles.closeButtonText}>Close</Text>
+              <Text style={styles.modalCloseText}>Close</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -343,7 +343,7 @@ export function Explore(_props: any) {
         visible={showPopup6}
         onRequestClose={handleClosePopup6}
       >
-        <View style={styles.modal}>
+        <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Image source={animal6Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
@@ -351,10 +351,10 @@ export function Explore(_props: any) {
               attached to the sides of is feet. It commonly eats insects.
             </Text>
             <TouchableOpacity
-              style={styles.closeButton}
+              style={styles.modalCloseButton}
               onPress={handleClosePopup6}
             >
-              <Text style={styles.closeButtonText}>Close</Text>
+              <Text style={styles.modalCloseText}>Close</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -367,7 +367,7 @@ export function Explore(_props: any) {
         visible={showPopup7}
         onRequestClose={handleClosePopup7}
       >
-        <View style={styles.modal}>
+        <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Image source={animal7Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
@@ -376,10 +376,10 @@ export function Explore(_props: any) {
               areas. .
             </Text>
             <TouchableOpacity
-              style={styles.closeButton}
+              style={styles.modalCloseButton}
               onPress={handleClosePopup7}
             >
-              <Text style={styles.closeButtonText}>Close</Text>
+              <Text style={styles.modalCloseText}>Close</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -392,7 +392,7 @@ export function Explore(_props: any) {
         visible={showPopup8}
         onRequestClose={handleClosePopup8}
       >
-        <View style={styles.modal}>
+        <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Image source={animal8Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
@@ -401,10 +401,10 @@ export function Explore(_props: any) {
               threatened, it will play dead or hiss.
             </Text>
             <TouchableOpacity
-              style={styles.closeButton}
+              style={styles.modalCloseButton}
               onPress={handleClosePopup8}
             >
-              <Text style={styles.closeButtonText}>Close</Text>
+              <Text style={styles.modalCloseText}>Close</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -417,7 +417,7 @@ export function Explore(_props: any) {
         visible={showPopup9}
         onRequestClose={handleClosePopup9}
       >
-        <View style={styles.modal}>
+        <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Image source={animal9Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
@@ -426,10 +426,10 @@ export function Explore(_props: any) {
               may see it basking in the sun.
             </Text>
             <TouchableOpacity
-              style={styles.closeButton}
+              style={styles.modalCloseButton}
               onPress={handleClosePopup9}
             >
-              <Text style={styles.closeButtonText}>Close</Text>
+              <Text style={styles.modalCloseText}>Close</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -442,7 +442,7 @@ export function Explore(_props: any) {
         visible={showPopup10}
         onRequestClose={handleClosePopup10}
       >
-        <View style={styles.modal}>
+        <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Image source={animal10Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
@@ -451,10 +451,10 @@ export function Explore(_props: any) {
               .
             </Text>
             <TouchableOpacity
-              style={styles.closeButton}
+              style={styles.modalCloseButton}
               onPress={handleClosePopup10}
             >
-              <Text style={styles.closeButtonText}>Close</Text>
+              <Text style={styles.modalCloseText}>Close</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -467,7 +467,7 @@ export function Explore(_props: any) {
         visible={showPopup11}
         onRequestClose={handleClosePopup11}
       >
-        <View style={styles.modal}>
+        <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Image source={animal11Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
@@ -476,10 +476,10 @@ export function Explore(_props: any) {
               and garbage.
             </Text>
             <TouchableOpacity
-              style={styles.closeButton}
+              style={styles.modalCloseButton}
               onPress={handleClosePopup11}
             >
-              <Text style={styles.closeButtonText}>Close</Text>
+              <Text style={styles.modalCloseText}>Close</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -492,7 +492,7 @@ export function Explore(_props: any) {
         visible={showPopup12}
         onRequestClose={handleClosePopup12}
       >
-        <View style={styles.modal}>
+        <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Image source={animal12Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
@@ -500,10 +500,10 @@ export function Explore(_props: any) {
               stomp its feet and then may spray its familiar stench.
             </Text>
             <TouchableOpacity
-              style={styles.closeButton}
+              style={styles.modalCloseButton}
               onPress={handleClosePopup12}
             >
-              <Text style={styles.closeButtonText}>Close</Text>
+              <Text style={styles.modalCloseText}>Close</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -511,3 +511,104 @@ export function Explore(_props: any) {
     </LinearGradient>
   );
 }
+const styles = StyleSheet.create({
+  background: {
+    flex: 1,
+    alignItems: "center",
+  },
+  scrollView: {
+    backgroundColor: " ",
+    marginHorizontal: 20,
+  },
+
+  title: {
+    marginTop: 20,
+    marginBottom: 10,
+    fontSize: 23,
+    fontWeight: "bold",
+  },
+  centeredView: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0,0,0,0.5)",
+  },
+  button: {
+    backgroundColor: "blue",
+    color: "white",
+    paddingVertical: 10,
+
+    fontSize: 13,
+    //fontWeight: "bold",
+    borderRadius: 15,
+    marginTop: 25,
+    width: 200,
+    textAlign: "center",
+    //height: 70,
+    //width: 200,
+  },
+  buttonText: {
+    color: "white",
+    fontSize: 15,
+    fontWeight: "bold",
+    textAlign: "center",
+    maxWidth: "100%",
+    overflow: "hidden",
+  },
+  modalContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+  },
+  modalContent: {
+    backgroundColor: "lightpink",
+    padding: 20,
+    borderRadius: 10,
+    alignItems: "center",
+    overflow: "hidden",
+  },
+  //picture's title
+  modalTitle: {
+    fontSize: 25,
+    fontWeight: "bold",
+    marginBottom: 10,
+  },
+  //picture's size
+  modalImage: {
+    width: 200, // Adjust the width as needed
+    height: 200, // Adjust the height as needed
+    resizeMode: "cover",
+    borderRadius: 10,
+    marginBottom: 10,
+  },
+  modalText: {
+    fontSize: 16,
+    fontWeight: "bold",
+    textAlign: "left",
+  },
+  modalCloseButton: {
+    marginTop: 20,
+    backgroundColor: "blue",
+    paddingVertical: 14,
+    paddingHorizontal: 14,
+    borderRadius: 15,
+  },
+  modalCloseText: {
+    color: "white",
+    fontSize: 16,
+    fontWeight: "bold",
+  },
+  navigator: {
+    backgroundColor: "lightblue",
+    color: "black",
+    paddingVertical: 12,
+    paddingHorizontal: 12,
+    borderRadius: 20,
+    overflow: "hidden",
+    marginBottom: 20,
+    marginTop: 10,
+  },
+});
+
+export default Explore;
