@@ -114,42 +114,54 @@ export function Explore(_props: any) {
       >
         <TouchableOpacity style={styles.button} onPress={handleAshtreePress}>
           <Text style={styles.buttonText}>White Ash Tree</Text>
+          <Image source={ashtreeImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleBigbluePress}>
           <Text style={styles.buttonText}>Big Bluestem</Text>
+          <Image source={bigblueImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleBuckthornPress}>
           <Text style={styles.buttonText}>Common Buckhorn</Text>
+          <Image source={buckhornImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleDaisyPress}>
           <Text style={styles.buttonText}>Daisy Fleabane </Text>
+          <Image source={daisyImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleHorsetailPress}>
           <Text style={styles.buttonText}>Horsetail</Text>
+          <Image source={horsetailImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleJoepyePress}>
           <Text style={styles.buttonText}>Joe Pye Weed</Text>
+          <Image source={joepyeImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleNewenglandPress}>
           <Text style={styles.buttonText}> New England Aster</Text>
+          <Image source={newenglandImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handlePhragmitesPress}>
           <Text style={styles.buttonText}>Phragmites</Text>
+          <Image source={phragmitesImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handlePrairiePress}>
           <Text style={styles.buttonText}>Prairie Coreopsis</Text>
+          <Image source={prairieImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleRedoakPress}>
           <Text style={styles.buttonText}>Red Oak</Text>
+          <Image source={redoakImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleTeaselPress}>
           <Text style={styles.buttonText}>Teasel </Text>
+          <Image source={teaselImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handleWildbergamotPress}
         >
           <Text style={styles.buttonText}>Wild Bergamot</Text>
+          <Image source={wildbergamotImage} style={styles.modalImage1} />
         </TouchableOpacity>
       </ScrollView>
 
@@ -490,41 +502,53 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    marginTop: 25,
+    marginTop: 20,
     marginBottom: 10,
     fontSize: 23,
     fontWeight: "bold",
-    textAlign: "center",
+  },
+
+  centeredView: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0,0,0,0.5)",
   },
 
   button: {
     backgroundColor: "blue",
     color: "white",
     paddingVertical: 10,
-
     fontSize: 13,
-    //fontWeight: "bold",
     borderRadius: 15,
     marginTop: 25,
-    width: 200,
+    width: 150,
     textAlign: "center",
-    overflow: "hidden",
-    //height: 70,
-    //width: 200,
   },
+
   buttonText: {
     color: "white",
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: "bold",
     textAlign: "center",
     maxWidth: "100%",
     overflow: "hidden",
   },
+
   modalContainer: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "rgba(0, 0, 0, 0.5)",
+  },
+  modalImage1: {
+    alignItems: "flex-start",
+    width: 150, // Adjust the width as needed
+    height: 94, // Adjust the height as needed
+    marginBottom: 0,
+    marginTop: 10,
+    resizeMode: "cover",
+    borderRadius: 10,
   },
   modalContent: {
     backgroundColor: "lightpink",
@@ -564,6 +588,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "bold",
   },
+
   navigator: {
     backgroundColor: "lightblue",
     color: "black",

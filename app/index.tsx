@@ -18,6 +18,7 @@ function index(_props: any) {
         style={styles.logo}
       />
       <Text style={styles.title}>Dunning Read Natural Area</Text>
+
       <Link style={styles.audioNavigate} href={"/audioTourMap"}>
         <Text style={styles.audioNavigateText}>Audio Tour Map</Text>
       </Link>
@@ -53,7 +54,7 @@ const styles = StyleSheet.create({
     width: 180, // Adjust the width and height as needed
     height: 180,
     marginBottom: 20,
-    //marginTop: 1,
+    marginTop: 1,
     resizeMode: "contain", // Adjust the resizeMode as needed
   },
   title: {
@@ -62,7 +63,7 @@ const styles = StyleSheet.create({
     color: "darkgreen",
     textAlign: "center",
     overflow: "hidden",
-    marginBottom: 40,
+    marginBottom: 30,
     marginTop: 1, // Adjusted marginTop to make the title stand out at the top
   },
   audioNavigate: {
@@ -71,8 +72,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     borderRadius: 30,
     overflow: "hidden",
-    marginBottom: 15,
-    marginTop: 5,
+    marginBottom: 10,
+    marginTop: 2,
   },
   audioNavigateText: {
     fontSize: 16,
@@ -86,7 +87,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     borderRadius: 30,
     overflow: "hidden",
-    marginBottom: 15,
+    marginBottom: 10,
   },
   exploreNavigateText: {
     fontSize: 16,
@@ -100,7 +101,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     borderRadius: 30,
     overflow: "hidden",
-    marginBottom: 15,
+    marginBottom: 10,
   },
   infoNavigateText: {
     fontSize: 16,
@@ -110,7 +111,7 @@ const styles = StyleSheet.create({
   },
   privacyContainer: {
     marginBottom: 2,
-    marginTop: 20,
+    marginTop: 15,
     alignItems: "flex-start",
   },
 
@@ -125,7 +126,7 @@ const styles = StyleSheet.create({
     marginBottom: 2,
     marginTop: 5,
     alignItems: "flex-start",
-    flexDirection: "row",
+    // flexDirection: "row",
   },
 
   termsText: {

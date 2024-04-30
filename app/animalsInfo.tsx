@@ -160,50 +160,62 @@ export function Explore(_props: any) {
       >
         <TouchableOpacity style={styles.button} onPress={handleButtonPress1}>
           <Text style={styles.buttonText}>Coyote</Text>
+          <Image source={animal1Image} style={styles.modalImage1} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={handleButtonPress2}>
-          <Text style={styles.buttonText}>Dekay Snake</Text>
+          <Text style={styles.buttonText}>DeKay's Snake</Text>
+          <Image source={animal2Image} style={styles.modalImage1} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={handleButtonPress3}>
           <Text style={styles.buttonText}>Eastern Cottontail</Text>
+          <Image source={animal3Image} style={styles.modalImage1} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={handleButtonPress4}>
           <Text style={styles.buttonText}>Eastern Gray Squirrel</Text>
+          <Image source={animal4Image} style={styles.modalImage1} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={handleButtonPress5}>
           <Text style={styles.buttonText}>Fox Squirrel</Text>
+          <Image source={animal5Image} style={styles.modalImage1} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={handleButtonPress6}>
           <Text style={styles.buttonText}>Brown Bat</Text>
+          <Image source={animal6Image} style={styles.modalImage1} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={handleButtonPress7}>
           <Text style={styles.buttonText}>Meadow Animal</Text>
+          <Image source={animal7Image} style={styles.modalImage1} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={handleButtonPress8}>
           <Text style={styles.buttonText}>Opossum</Text>
+          <Image source={animal8Image} style={styles.modalImage1} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={handleButtonPress9}>
           <Text style={styles.buttonText}>Plains Garter Snake</Text>
+          <Image source={animal9Image} style={styles.modalImage1} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={handleButtonPress10}>
           <Text style={styles.buttonText}>Prairie Crayfish</Text>
+          <Image source={animal10Image} style={styles.modalImage1} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={handleButtonPress11}>
           <Text style={styles.buttonText}>Raccoon</Text>
+          <Image source={animal11Image} style={styles.modalImage1} />
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={handleButtonPress12}>
           <Text style={styles.buttonText}>Skunk</Text>
+          <Image source={animal12Image} style={styles.modalImage1} />
         </TouchableOpacity>
       </ScrollView>
 
@@ -448,7 +460,6 @@ export function Explore(_props: any) {
             <Text style={styles.modalText}>
               The Prairie Crayfish digs burrows in wet prairie areas. You may
               find it near ditches, like the channel that flows across the DRNA.
-              .
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -527,39 +538,44 @@ const styles = StyleSheet.create({
     fontSize: 23,
     fontWeight: "bold",
   },
+
   centeredView: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "rgba(0,0,0,0.5)",
   },
+
   button: {
     backgroundColor: "blue",
     color: "white",
     paddingVertical: 10,
-
     fontSize: 13,
-    //fontWeight: "bold",
     borderRadius: 15,
     marginTop: 25,
-    width: 200,
+    width: 150,
     textAlign: "center",
-    //height: 70,
-    //width: 200,
   },
+
   buttonText: {
     color: "white",
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: "bold",
     textAlign: "center",
     maxWidth: "100%",
     overflow: "hidden",
   },
+
   modalContainer: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "rgba(0, 0, 0, 0.5)",
+  },
+  modalImage1: {
+    alignItems: "flex-start",
+    width: 150, // Adjust the width as needed
+    height: 94, // Adjust the height as needed
   },
   modalContent: {
     backgroundColor: "lightpink",

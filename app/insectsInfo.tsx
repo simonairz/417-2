@@ -120,72 +120,84 @@ function Explore(_props: any) {
           onPress={handlebumblebeeImagePress}
         >
           <Text style={styles.buttonText}> Bumble Bee </Text>
+          <Image source={bumblebeeImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handlebutterflyImagePress}
         >
           <Text style={styles.buttonText}> Butterfly </Text>
+          <Image source={butterflyImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handlecicadaImagePress}
         >
           <Text style={styles.buttonText}> Cicada </Text>
+          <Image source={cicadaImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handledragonflyImagePress}
         >
           <Text style={styles.buttonText}> Dragonfly </Text>
+          <Image source={dragonflyImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handlefireflyImagePress}
         >
           <Text style={styles.buttonText}> Firefly </Text>
+          <Image source={fireflyImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handlebeetleImagePress}
         >
           <Text style={styles.buttonText}> Beetle </Text>
+          <Image source={beetleImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handlegrasshopperImagePress}
         >
           <Text style={styles.buttonText}>Grasshopper</Text>
+          <Image source={grasshopperImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handleladybugImagePress}
         >
           <Text style={styles.buttonText}>Ladybug</Text>
+          <Image source={ladybugImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handlemilkweedImagePress}
         >
           <Text style={styles.buttonText}>Milkweed</Text>
+          <Image source={milkweedImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handlemonarchImagePress}
         >
           <Text style={styles.buttonText}>Monarch</Text>
+          <Image source={monarchImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handlemantisImagePress}
         >
           <Text style={styles.buttonText}>Mantis</Text>
+          <Image source={mantisImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handleredwingbutterflyImagePress}
         >
           <Text style={styles.buttonText}>Red Admiral Butterfly</Text>
+          <Image source={redwingbutterflyImage} style={styles.modalImage1} />
         </TouchableOpacity>
       </ScrollView>
 
@@ -522,6 +534,12 @@ const styles = StyleSheet.create({
     fontSize: 23,
     fontWeight: "bold",
   },
+  modalImage1: {
+    alignItems: "flex-start",
+    width: 150, // Adjust the width as needed
+    height: 94, // Adjust the height as needed
+  },
+
   centeredView: {
     flex: 1,
     justifyContent: "center",
@@ -532,19 +550,15 @@ const styles = StyleSheet.create({
     backgroundColor: "blue",
     color: "white",
     paddingVertical: 10,
-
     fontSize: 13,
-    //fontWeight: "bold",
     borderRadius: 15,
     marginTop: 25,
-    width: 200,
+    width: 150,
     textAlign: "center",
-    //height: 70,
-    //width: 200,
   },
   buttonText: {
     color: "white",
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: "bold",
     textAlign: "center",
     maxWidth: "100%",

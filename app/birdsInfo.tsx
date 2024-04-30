@@ -114,48 +114,60 @@ export function Explore(_props: any) {
       >
         <TouchableOpacity style={styles.button} onPress={handleFirstBirdPress}>
           <Text style={styles.buttonText}>American Crow</Text>
+          <Image source={firstBirdImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleSecondBirdPress}>
           <Text style={styles.buttonText}>American GoldFinch</Text>
+          <Image source={secondBirdImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleThirdBirdPress}>
           <Text style={styles.buttonText}>American Robin</Text>
+          <Image source={thirdBirdImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleFourthBirdPress}>
           <Text style={styles.buttonText}>Baltimore Oriole</Text>
+          <Image source={fourthBirdImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleFifthBirdPress}>
           <Text style={styles.buttonText}>Black Capped Chickadee</Text>
+          <Image source={fifthBirdImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleSixthBirdPress}>
           <Text style={styles.buttonText}>Brown Headed Cowbird</Text>
+          <Image source={sixthBirdImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handleSeventhBirdPress}
         >
           <Text style={styles.buttonText}>Common Grackle</Text>
+          <Image source={seventhBirdImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleEighthBirdPress}>
           <Text style={styles.buttonText}>European Starling</Text>
+          <Image source={eighthBirdImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleNinthBirdPress}>
           <Text style={styles.buttonText}>House Sparrow</Text>
+          <Image source={ninthBirdImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleTenthBirdPress}>
           <Text style={styles.buttonText}>Northern Cardinal</Text>
+          <Image source={tenthBirdImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handleEleventhBirdPress}
         >
           <Text style={styles.buttonText}>Red Tailed Hawk</Text>
+          <Image source={eleventhBirdImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handleTwelfthBirdPress}
         >
           <Text style={styles.buttonText}>Red Winged Black Bird</Text>
+          <Image source={twelfthBirdImage} style={styles.modalImage1} />
         </TouchableOpacity>
       </ScrollView>
 
@@ -514,24 +526,28 @@ const styles = StyleSheet.create({
     backgroundColor: "blue",
     color: "white",
     paddingVertical: 10,
-
     fontSize: 13,
     //fontWeight: "bold",
     borderRadius: 15,
     marginTop: 25,
-    width: 200,
+    width: 150,
     textAlign: "center",
-    overflow: "hidden",
     //height: 70,
     //width: 200,
   },
+
   buttonText: {
     color: "white",
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: "bold",
     textAlign: "center",
     maxWidth: "100%",
     overflow: "hidden",
+  },
+  modalImage1: {
+    alignItems: "flex-start",
+    width: 160, // Adjust the width as needed
+    height: 90, // Adjust the height as needed
   },
   modalContainer: {
     flex: 1,
