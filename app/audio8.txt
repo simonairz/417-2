@@ -3,20 +3,19 @@ import React, { useState } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { ResizeMode, Video } from "expo-av";
 
-function audio4(_props: any) {
+function audio1(_props: any) {
   const video = React.useRef(null);
   const [status, setStatus] = React.useState({});
   const [showControls, setShowControls] = useState(true);
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Time travel to the future</Text>
-      <Text style={styles.text}>Tap to view audio controls</Text>
-
+      <Text style={styles.text}>Going with the flow</Text>
+      <Text style={styles.text}>Tap to show media controls</Text>
       <Video
         ref={video}
         style={styles.video}
-        source={require("../assets/music/breakingTheHabit.mp3")}
+        source={require("../assets/music/oneStepCloser.mp3")}
         resizeMode={ResizeMode.CONTAIN}
         useNativeControls={showControls}
         onPlaybackStatusUpdate={setStatus}
@@ -26,7 +25,7 @@ function audio4(_props: any) {
   );
 }
 
-export default audio4;
+export default audio1;
 
 const styles = StyleSheet.create({
   container: {

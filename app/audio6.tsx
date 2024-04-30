@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { ResizeMode, Video } from "expo-av";
 
-function audio1(_props: any) {
+function MediaPlayer(_props: any) {
   const video = React.useRef(null);
   const [status, setStatus] = React.useState({});
   const [showControls, setShowControls] = useState(true);
@@ -25,7 +25,7 @@ function audio1(_props: any) {
   );
 }
 
-export default audio1;
+export default MediaPlayer;
 
 const styles = StyleSheet.create({
   container: {
@@ -41,6 +41,11 @@ const styles = StyleSheet.create({
   },
   video: {
     flex: 1,
-    width: "100%",
+    width: "50%",
+
+    borderRadius: 20,
+    overflow: "visible",
+    // elevation: 100,
+    //aspectRatio: 3 / 4,
   },
 });

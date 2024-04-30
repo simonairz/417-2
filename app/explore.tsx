@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView, Text, StyleSheet, Image } from "react-native";
+import { SafeAreaView, Text, StyleSheet } from "react-native";
 import { Link, router } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
 
@@ -48,25 +48,16 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "black",
   },
-  imageLink: {
-    paddingVertical: 12,
-    paddingHorizontal: 12,
-    width: 20,
-
-    borderRadius: 20,
-    overflow: "hidden",
-    marginBottom: 35,
-  },
   navigator: {
-    backgroundColor: "darkblue",
+    backgroundColor: "blue",
     color: "white",
-    fontSize: 15,
+    fontSize: 20,
     fontWeight: "bold",
-    paddingVertical: 16,
+    paddingVertical: 20,
     paddingHorizontal: 16,
-    borderRadius: 30,
+    borderRadius: 25,
     overflow: "hidden",
-    marginBottom: 20,
+    marginBottom: 10,
     marginTop: 15,
     width: 150,
     textAlign: "center",
@@ -78,9 +69,9 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     paddingHorizontal: 12,
     borderRadius: 20,
-    overflow: "hidden",
+    overflow: "scroll",
     marginBottom: 20,
-    marginTop: 110,
+    marginTop: 97,
   },
 });
 

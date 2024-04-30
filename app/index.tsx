@@ -25,7 +25,7 @@ function index(_props: any) {
       <Link style={styles.exploreNavigate} href={"/explore"}>
         <Text style={styles.exploreNavigateText}>Explore Wildlife</Text>
       </Link>
-      <View style={styles.infoNavigateContainer}>
+      <View style={styles.infoNavigate}>
         <Link style={styles.infoNavigateText} href={"/aboutus"}>
           <Text style={styles.infoNavigateText}>Learn About Us</Text>
         </Link>
@@ -53,30 +53,30 @@ const styles = StyleSheet.create({
   logo: {
     width: 180, // Adjust the width and height as needed
     height: 180,
-    marginBottom: 20,
-    marginTop: 1,
+    marginBottom: 15,
+    //marginTop: 1,
     resizeMode: "contain", // Adjust the resizeMode as needed
   },
   title: {
-    fontSize: 20,
+    fontSize: 22,
     fontWeight: "bold",
     color: "darkgreen",
     textAlign: "center",
     overflow: "hidden",
-    marginBottom: 30,
-    marginTop: 1, // Adjusted marginTop to make the title stand out at the top
+    marginBottom: 40,
+    //marginTop: 1, // Adjusted marginTop to make the title stand out at the top
   },
   audioNavigate: {
     backgroundColor: "lightgreen",
     paddingVertical: 16,
-    paddingHorizontal: 16,
-    borderRadius: 30,
+    paddingHorizontal: 18,
+    borderRadius: 28,
     overflow: "hidden",
     marginBottom: 10,
     marginTop: 2,
   },
   audioNavigateText: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: "bold",
     textAlign: "center",
     color: "black",
@@ -84,27 +84,29 @@ const styles = StyleSheet.create({
   exploreNavigate: {
     backgroundColor: "lightgreen",
     paddingVertical: 16,
-    paddingHorizontal: 16,
-    borderRadius: 30,
+    paddingHorizontal: 18,
+    borderRadius: 28,
     overflow: "hidden",
     marginBottom: 10,
+    marginTop: 2,
   },
   exploreNavigateText: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: "bold",
     textAlign: "center",
     color: "black",
   },
-  infoNavigateContainer: {
+  infoNavigate: {
     backgroundColor: "lightgreen",
     paddingVertical: 16,
-    paddingHorizontal: 16,
+    paddingHorizontal: 18,
     borderRadius: 30,
-    overflow: "hidden",
-    marginBottom: 10,
+    overflow: "visible",
+    marginBottom: 20,
+    marginTop: 2,
   },
   infoNavigateText: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: "bold",
     textAlign: "center",
     color: "black",

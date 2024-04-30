@@ -1,86 +1,79 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, ImageBackground, StyleSheet, Button } from "react-native";
 import { Video } from "expo-av";
 
-function AudioPlayer(_props: any) {
+function Audio2(_props: any) {
   const video = React.useRef(null);
-  const [status, setStatus] = React.useState({});
-  const [showControls, setShowControls] = useState(false);
+  const [showControls, setShowControls] = useState(true);
+
+  const toggleControls = () => {
+    setShowControls(!showControls);
+  };
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Indigenous Connections</Text>
-      <Text style={styles.subtitle}>Audio2</Text>
-      <View style={styles.videoContainer}>
-        <Video
-          ref={video}
-          style={styles.video}
-          source={require("../assets/music/inTheEnd.mp3")}
-          //resizeMode="cover"
-          useNativeControls={showControls}
-          onPlaybackStatusUpdate={setStatus}
-        />
+    <ImageBackground
+      style={styles.background}
+      source={require("../assets/images/indigenous.png")}
+    >
+      <View style={styles.container}>
+        <Text style={styles.title}>Indigenous Connections</Text>
+        <View style={styles.buttonContainer}>
+          <Button
+            title="Click below to start listening."
+            onPress={toggleControls}
+            color="#2bf30c" // Adjusted button color
+          />
+        </View>
+        <View style={styles.videoContainer}>
+          <Video
+            ref={video}
+            style={styles.video}
+            source={require("../assets/music/inTheEnd.mp3")}
+            useNativeControls={showControls}
+          />
+        </View>
+
+        <StatusBar style="auto" />
       </View>
-      <View style={styles.controlsContainer}>
-        <TouchableOpacity
-          style={[
-            styles.controlButton,
-            { backgroundColor: showControls ? "#bbb" : "#ccc" },
-          ]}
-          onPress={() => setShowControls(!showControls)}
-        >
-          <Text style={styles.controlButtonText}>
-            {showControls ? "Hide Controls" : "Tap here to enable Audio Tour"}
-          </Text>
-        </TouchableOpacity>
-      </View>
-      <StatusBar style="auto" />
-    </View>
+    </ImageBackground>
   );
 }
 
-export default AudioPlayer;
+export default Audio2;
 
 const styles = StyleSheet.create({
-  container: {
+  background: {
     flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  container: {
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#8a9a87",
+    paddingHorizontal: 20,
+    marginBottom: 100,
   },
   title: {
-    fontSize: 28,
+    fontSize: 22,
     fontWeight: "bold",
-    marginBottom: 10,
+    marginTop: 5,
+    marginBottom: 200,
+    color: "white",
   },
-  subtitle: {
-    fontSize: 18,
-    color: "#666",
-    marginBottom: 20,
+  buttonContainer: {
+    marginBottom: 8,
+    fontWeight: "bold",
+    marginTop: 5,
   },
   videoContainer: {
-    width: "80%",
-    borderRadius: 15,
-    overflow: "hidden",
+    width: "90%",
     aspectRatio: 16 / 9,
+    borderRadius: 20,
+    overflow: "hidden",
+    elevation: 100,
   },
   video: {
     flex: 1,
-    width: "100%",
-  },
-  controlsContainer: {
-    marginTop: 20,
-  },
-  controlButton: {
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 8,
-    backgroundColor: "#bbb",
-  },
-  controlButtonText: {
-    fontSize: 16,
-    color: "#fff",
-    fontWeight: "bold",
   },
 });

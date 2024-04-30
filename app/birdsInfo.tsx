@@ -542,7 +542,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     maxWidth: "100%",
-    overflow: "hidden",
+    overflow: "visible",
   },
   modalImage1: {
     alignItems: "flex-start",
@@ -560,7 +560,7 @@ const styles = StyleSheet.create({
     padding: 20,
     borderRadius: 10,
     alignItems: "center",
-    overflow: "hidden",
+    overflow: "visible",
   },
   //picture's title
   modalTitle: {
