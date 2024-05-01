@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { View, Text, ImageBackground, StyleSheet, Button } from "react-native";
 import { Video } from "expo-av";
 
-function Audio1(_props: any) {
+function Audio5(_props: any) {
   const video = React.useRef(null);
   const [showControls, setShowControls] = useState(true);
 
@@ -40,7 +40,7 @@ function Audio1(_props: any) {
   );
 }
 
-export default Audio1;
+export default Audio5;
 
 const styles = StyleSheet.create({
   background: {
