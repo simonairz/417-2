@@ -1,47 +1,79 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
-import { View, Text, StyleSheet } from "react-native";
-import { ResizeMode, Video } from "expo-av";
+import { View, Text, ImageBackground, StyleSheet, Button } from "react-native";
+import { Video } from "expo-av";
 
-function audio4(_props: any) {
+function Audio4(_props: any) {
   const video = React.useRef(null);
-  const [status, setStatus] = React.useState({});
   const [showControls, setShowControls] = useState(true);
 
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Time travel to the future</Text>
-      <Text style={styles.text}>Tap to view audio controls</Text>
+  const toggleControls = () => {
+    setShowControls(!showControls);
+  };
 
-      <Video
-        ref={video}
-        style={styles.video}
-        source={require("../assets/music/breakingTheHabit.mp3")}
-        resizeMode={ResizeMode.CONTAIN}
-        useNativeControls={showControls}
-        onPlaybackStatusUpdate={setStatus}
-      />
-      <StatusBar style="auto" />
-    </View>
+  return (
+    <ImageBackground
+      style={styles.background}
+      source={require("../assets/images/future.png")}
+    >
+      <View style={styles.container}>
+        <Text style={styles.title}>Time Travel to the Future</Text>
+        <View style={styles.buttonContainer}>
+          <Button
+            title="Click below to start listening."
+            onPress={toggleControls}
+            color="#2bf30c" // Adjusted button color
+          />
+        </View>
+        <View style={styles.videoContainer}>
+          <Video
+            ref={video}
+            style={styles.video}
+            source={require("../assets/music/breakingTheHabit.mp3")}
+            useNativeControls={showControls}
+          />
+        </View>
+
+        <StatusBar style="auto" />
+      </View>
+    </ImageBackground>
   );
 }
 
-export default audio4;
+export default Audio4;
 
 const styles = StyleSheet.create({
-  container: {
+  background: {
     flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  container: {
     justifyContent: "center",
     alignItems: "center",
+    paddingHorizontal: 20,
+    marginBottom: 100,
   },
-  text: {
-    alignItems: "center",
-    color: "blue",
-    fontSize: 23,
-    marginTop: 20,
+  title: {
+    fontSize: 25,
+    fontWeight: "bold",
+    marginTop: 5,
+    marginBottom: 200,
+    color: "white",
+  },
+  buttonContainer: {
+    marginBottom: 8,
+    fontWeight: "bold",
+    marginTop: 5,
+  },
+  videoContainer: {
+    width: "90%",
+    aspectRatio: 16 / 9,
+    borderRadius: 20,
+    overflow: "hidden",
+    elevation: 100,
   },
   video: {
     flex: 1,
-    width: "100%",
   },
 });

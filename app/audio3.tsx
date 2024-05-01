@@ -14,7 +14,7 @@ function Audio3(_props: any) {
   return (
     <ImageBackground
       style={styles.background}
-      source={require("../assets/images/sculpture.png")}
+      source={require("../assets/images/treasure.png")}
     >
       <View style={styles.container}>
         <Text style={styles.title}>The Community Saves a Treasure</Text>
@@ -22,7 +22,7 @@ function Audio3(_props: any) {
           <Button
             title="Click below to start listening."
             onPress={toggleControls}
-            color="#2bf30c" // Adjusted button color
+            color="black" // Adjusted button color
           />
         </View>
         <View style={styles.videoContainer}>
@@ -58,6 +58,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
     alignItems: "center",
     fontWeight: "bold",
+    textAlign: "center",
     marginTop: 5,
     marginBottom: 200,
     color: "RED",
