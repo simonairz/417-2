@@ -293,9 +293,7 @@ export function Explore(_props: any) {
               The brightly-colored{" "}
               <Link
                 style={styles.Link}
-                href={
-                  "https://www.allaboutbirds.org/guide/Black-capped_Chickadee"
-                }
+                href={"https://www.allaboutbirds.org/guide/baltimore_oriole"}
               >
                 Baltimore Oriole
               </Link>{" "}
