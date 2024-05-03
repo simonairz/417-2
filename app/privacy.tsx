@@ -22,23 +22,22 @@ export function Explore(_props: any) {
         <Text style={styles.safeHeader}> Information Collection and Use</Text>
         <Text style={styles.safeContent}>
           The Application collects information when you download and use it.
-          This information may include information such as:
-          <Text style={styles.safeContent}>
-            1- Your device's Internet Protocol Address (e.g. IP address). 2- The
-            page
-          </Text>
-          Internet Protocol address (e.g. IP address). 2- The pages of the
-          Application that you visit, the time and date of your visit, the time
-          spent on those pages. 3- The time spent on the Application. 4- The
-          operating system you use on your mobile device. The Application
-          collects your device's location, which helps the Service Provider
-          determine your approximate geographical location and make use of in
-          below ways: 5- Geolocation Services: The Service Provider utilizes
-          location data to provide features such as personalized content,
-          relevant recommendations, and location-based services. 6- Third-Party
-          Services: Periodically, the Service Provider may transmit anonymized
-          location data to external services. These services assist them in
-          enhancing the Application and optimizing their offerings.
+          This information may include information such as:{"\n"}
+          1- Your device's Internet Protocol Address (e.g. IP address).{"\n"}
+          2- The page of the Application that you visit, the time and the date
+          of your visit, the time spent on those pages.{"\n"}
+          3- The time spent on the Application. {"\n"}
+          4- The operating system you use on your mobile device.{"\n"}
+          The Application collects your device's location, which helps the
+          Service Provider determine your approximate geographical location and
+          make use of in below ways:{"\n"}
+          1- Geolocation Services: The Service Provider utilizes location data
+          to provide features such as personalized content, relevant
+          recommendations, and location-based services.{"\n"}
+          2- Third-Party Services: Periodically, the Service Provider may
+          transmit anonymized location data to external services. These services
+          assist them in enhancing the Application and optimizing their
+          offerings.
         </Text>
         <Text style={styles.safeHeader}> Third Party Access </Text>
         <Text style={styles.safeContent}>
@@ -49,16 +48,18 @@ export function Explore(_props: any) {
           privacy statement. Please note that the Application utilizes
           third-party services that have their own Privacy Policy about handling
           data. Below are the links to the Privacy Policy of the third-party
-          service providers used by the Application: .{" "}
+          service providers used by the Application:{" "}
           <Link
             style={styles.clickLink}
             href={"https://policies.google.com/privacy"}
           >
             Google
-          </Link>{" "}
+          </Link>
+          {"\n"}
           <Link style={styles.clickLink} href={"https://expo.dev/privacy"}>
             Expo
-          </Link>{" "}
+          </Link>
+          {"\n"}
           The Service Provider may disclose User Provided and Automatically
           Collected Information: as required by law, such as to comply with a
           subpoena, or similar legal process; when they believe in good faith
@@ -80,7 +81,7 @@ export function Explore(_props: any) {
           processed by these third-party services. We do not store or retain any
           location data ourselves. For more information on how location data is
           managed, please refer to the privacy policies of the respective
-          services:
+          services:{"\n"}
           <Link
             style={styles.clickLink}
             href={"https://policies.google.com/privacy"}
@@ -157,7 +158,7 @@ const styles = StyleSheet.create({
   title: {
     marginTop: 10,
     marginBottom: 10,
-    fontSize: 24,
+    fontSize: 21,
     fontWeight: "bold",
     color: "white",
     textAlign: "center",
@@ -166,7 +167,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     color: "black",
     fontWeight: "bold",
-    fontSize: 24,
+    fontSize: 21,
     textAlign: "left",
     alignItems: "center",
     textDecorationLine: "underline",
@@ -175,8 +176,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginHorizontal: 15,
     color: "black",
-    //fontWeight: "bold",
-    fontSize: 23,
+    fontSize: 21,
     textAlign: "left",
     alignItems: "center",
   },
@@ -184,14 +184,14 @@ const styles = StyleSheet.create({
   clickLink: {
     fontWeight: "bold",
     color: "red",
-    fontSize: 25,
+    fontSize: 21,
     textDecorationLine: "underline",
   },
 
   Link: {
     fontWeight: "bold",
     color: "red",
-    fontSize: 25,
+    fontSize: 21,
     textDecorationLine: "underline",
   },
   indexNavigator: {
