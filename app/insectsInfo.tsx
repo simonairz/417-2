@@ -154,7 +154,7 @@ function Explore(_props: any) {
           style={styles.button}
           onPress={handlebeetleImagePress}
         >
-          <Text style={styles.buttonText}> Beetle </Text>
+          <Text style={styles.buttonText}> Goldenrod Soldier Beetle</Text>
           <Image source={beetleImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
@@ -168,28 +168,28 @@ function Explore(_props: any) {
           style={styles.button}
           onPress={handleladybugImagePress}
         >
-          <Text style={styles.buttonText}>Ladybug</Text>
+          <Text style={styles.buttonText}>Lady beetles</Text>
           <Image source={ladybugImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handlemilkweedImagePress}
         >
-          <Text style={styles.buttonText}>Milkweed</Text>
+          <Text style={styles.buttonText}>Milkweed Bugs</Text>
           <Image source={milkweedImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handlemonarchImagePress}
         >
-          <Text style={styles.buttonText}>Monarch</Text>
+          <Text style={styles.buttonText}>Monarch Butterfly</Text>
           <Image source={monarchImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handlemantisImagePress}
         >
-          <Text style={styles.buttonText}>Mantis</Text>
+          <Text style={styles.buttonText}>Praying Mantis</Text>
           <Image source={mantisImage} style={styles.modalImage1} />
         </TouchableOpacity>
         <TouchableOpacity
@@ -218,8 +218,14 @@ function Explore(_props: any) {
             {/*  */}
             <Image source={bumblebeeImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              Bumble bees are stout fuzzy bees that vibrate at a high frequency
-              to remove and collect pollen.
+              <Link
+                style={styles.Link}
+                href={"https://xerces.org/bumblebees/identification"}
+              >
+                Bumble bees
+              </Link>{" "}
+              are stout fuzzy bees that vibrate at a high frequency to remove
+              and collect pollen.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -243,9 +249,17 @@ function Explore(_props: any) {
             {/*  */}
             <Image source={butterflyImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The Cabbage White Butterfly is a small white butterfly with black
-              spots and black tips on its forewings. It typically lays its eggs
-              on plants in the mustard family.
+              <Link
+                style={styles.Link}
+                href={
+                  "https://dnr.illinois.gov/education/wildaboutpages/wildaboutinvertebrates/wildaboutbutterflies/family-pieridae/wambcabbagebutterfly.html"
+                }
+              >
+                Cabbage White Butterfly
+              </Link>{" "}
+              is a small white butterfly with black spots and black tips on its
+              forewings. It typically lays its eggs on plants in the mustard
+              family.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -269,9 +283,15 @@ function Explore(_props: any) {
             {/*  */}
             <Image source={cicadaImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              Known for their summertime song, cicadas spend most of their lives
-              underground, where they eat tree roots. When they emerge, the
-              nymphs climb trees and molt.
+              Known for their summertime song,{" "}
+              <Link
+                style={styles.Link}
+                href={"https://extension.illinois.edu/insects/cicadas"}
+              >
+                cicadas
+              </Link>{" "}
+              spend most of their lives underground, where they eat tree roots.
+              When they emerge, the nymphs climb trees and molt.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -295,8 +315,16 @@ function Explore(_props: any) {
             {/*  */}
             <Image source={dragonflyImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              Dragonflies have two pairs of wings and a long thin abdomen. They
-              feed on insects, and live in aquatic areas.
+              <Link
+                style={styles.Link}
+                href={
+                  "https://dnr.illinois.gov/education/wildaboutpages/wildaboutinvertebrates/wildaboutdragonflies.html"
+                }
+              >
+                Dragonflies
+              </Link>{" "}
+              have two pairs of wings and a long thin abdomen. They feed on
+              insects, and live in aquatic areas.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -320,9 +348,18 @@ function Explore(_props: any) {
             {/*  */}
             <Image source={fireflyImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              Although fireflies are commonly known as “lightning bugs,” they
-              are actually beetles. In summer, you will see their flashing
-              lights, which help them attract mates.
+              Although{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://extension.illinois.edu/blogs/good-growing/2022-06-09-sparks-night-fireflies-and-tips-conserving-them"
+                }
+              >
+                fireflies
+              </Link>{" "}
+              are commonly known as “lightning bugs,” they are actually beetles.
+              In summer, you will see their flashing lights, which help them
+              attract mates.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -346,9 +383,17 @@ function Explore(_props: any) {
             {/*  */}
             <Image source={beetleImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The Goldenrod Soldier Beetle is an orange beetle that is often
-              seen on goldenrod flowers, Queen Anne’s lace, or milkweed in
-              fields and gardens.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://hort.extension.wisc.edu/articles/goldenrod-soldier-beetle/"
+                }
+              >
+                Goldenrod Soldier Beetle
+              </Link>{" "}
+              is an orange beetle that is often seen on goldenrod flowers, Queen
+              Anne’s lace, or milkweed in fields and gardens.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -372,8 +417,16 @@ function Explore(_props: any) {
             {/*  */}
             <Image source={grasshopperImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              Grasshoppers feed on leaves, flowers, and the stems of plants.
-              They have large eyes and long hind legs that they use for jumping.
+              <Link
+                style={styles.Link}
+                href={
+                  "http://extension.cropsciences.illinois.edu/turf/insects/grasshoppers/"
+                }
+              >
+                Grasshoppers
+              </Link>{" "}
+              feed on leaves, flowers, and the stems of plants. They have large
+              eyes and long hind legs that they use for jumping.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -393,13 +446,21 @@ function Explore(_props: any) {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
-            <Text style={styles.modalTitle}> Ladybugs</Text>
+            <Text style={styles.modalTitle}> Lady beetles</Text>
             {/*  */}
             <Image source={ladybugImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              Lady beetles or “ladybugs” as they’re often known, are not always
-              red with black spots. They may be yellow, pink, or orange. Most
-              species fed on pests such as mites, aphids, and whiteflies.
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.illinoiswildflowers.info/prairie/plantx/wld_bergamotx.htm"
+                }
+              >
+                Lady beetles
+              </Link>{" "}
+              or “ladybugs” as they’re often known, are not always red with
+              black spots. They may be yellow, pink, or orange. Most species fed
+              on pests such as mites, aphids, and whiteflies.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -423,9 +484,18 @@ function Explore(_props: any) {
             {/*  */}
             <Image source={milkweedImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              As their name suggests, milkweed bugs feed on the seeds of
-              milkweed, so you may find them clustered on the plant’s seed pods.
-              Adults are orange with a black band across their backs.
+              As their name suggests,{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.illinoiswildflowers.info/prairie/plantx/wld_bergamotx.htm"
+                }
+              >
+                Milkweed Bugs
+              </Link>{" "}
+              feed on the seeds of milkweed, so you may find them clustered on
+              the plant’s seed pods. Adults are orange with a black band across
+              their backs.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -449,9 +519,18 @@ function Explore(_props: any) {
             {/*  */}
             <Image source={monarchImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The Monarch butterfly, the state insect of Illinois, has orange
-              wings with black veins and edging. Monarchs are migratory, and
-              typically spend the winter in central Mexico.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://dnr.illinois.gov/education/wildaboutpages/wildaboutinvertebrates/wildaboutbutterflies/family-nymphalidae/wambmonarch.html"
+                }
+              >
+                Monarch butterfly
+              </Link>{" "}
+              , the state insect of Illinois, has orange wings with black veins
+              and edging. Monarchs are migratory, and typically spend the winter
+              in central Mexico.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -475,9 +554,17 @@ function Explore(_props: any) {
             {/*  */}
             <Image source={mantisImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              Praying mantises are difficult to find because these green insects
-              camouflage so well in their surroundings. These carnivores eat
-              other insects, and sometimes even small reptiles or amphibians.
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.reconnectwithnature.org/news-events/the-buzz/five-things-know-about-praying-mantis/"
+                }
+              >
+                Praying mantises
+              </Link>{" "}
+              are difficult to find because these green insects camouflage so
+              well in their surroundings. These carnivores eat other insects,
+              and sometimes even small reptiles or amphibians.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -501,9 +588,16 @@ function Explore(_props: any) {
             {/*  */}
             <Image source={redwingbutterflyImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The Red Admiral Butterfly has brown-black wings with white spots
-              and an orange-red band. You may spot it near woodlands,
-              streambanks, and yards.
+              <Link
+                style={styles.Link}
+                href={
+                  "https://dnr.illinois.gov/education/wildaboutpages/wildaboutinvertebrates/wildaboutbutterflies/family-nymphalidae/wambredadmiral.html"
+                }
+              >
+                Red Admiral Butterfly
+              </Link>{" "}
+              has brown-black wings with white spots and an orange-red band. You
+              may spot it near woodlands, streambanks, and yards.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -531,6 +625,7 @@ const styles = StyleSheet.create({
   title: {
     marginTop: 20,
     marginBottom: 10,
+    textAlign: "center",
     fontSize: 25,
     fontWeight: "bold",
   },
@@ -588,12 +683,13 @@ const styles = StyleSheet.create({
   modalTitle: {
     fontSize: 25,
     fontWeight: "bold",
+    textAlign: "center",
     marginBottom: 10,
   },
   //picture's size
   modalImage: {
     width: 320, // Adjust the width as needed
-    height: 300, // Adjust the height as needed
+    height: 266, // Adjust the height as needed
     resizeMode: "cover",
     borderRadius: 10,
     marginBottom: 10,

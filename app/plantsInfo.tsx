@@ -179,13 +179,20 @@ export function Explore(_props: any) {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
-            <Text style={styles.modalTitle}>White ash trees</Text>
+            <Text style={styles.modalTitle}>White Ash Trees</Text>
             {/* Add the American Crow image */}
             <Image source={ashtreeImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              White ash trees grow between 50 to 100 feet tall in upload
-              woodlands and city parks. They have leaves that are arranged
-              opposite each other.
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.illinoiswildflowers.info/trees/plants/white_ash.html"
+                }
+              >
+                White Ash Trees
+              </Link>{" "}
+              grow between 50 to 100 feet tall in upload woodlands and city
+              parks. They have leaves that are arranged opposite each other.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -210,9 +217,16 @@ export function Explore(_props: any) {
             {/* Add the Another Bird image */}
             <Image source={bigblueImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              Big Bluestem grass can grow up to eight feet tall. It is often
-              used for erosion control, and provides habitat to ground-nesting
-              birds.
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.fs.usda.gov/wildflowers/plant-of-the-week/andropogon_gerardii.shtml"
+                }
+              >
+                Big Bluestem
+              </Link>{" "}
+              grass can grow up to eight feet tall. It is often used for erosion
+              control, and provides habitat to ground-nesting birds.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -237,9 +251,16 @@ export function Explore(_props: any) {
             {/* Add the Third Bird image */}
             <Image source={buckhornImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              Common Buckhorn can grow up to 25’ tall. First introduced as a
-              landscaping plant, this species can spread rapidly and displace
-              native plants.
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.illinoiswildflowers.info/trees/plants/cm_buckthorn.htm"
+                }
+              >
+                Common Buckhorn
+              </Link>{" "}
+              can grow up to 25’ tall. First introduced as a landscaping plant,
+              this species can spread rapidly and displace native plants.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -264,9 +285,16 @@ export function Explore(_props: any) {
             {/* Add the Fourth Bird image */}
             <Image source={daisyImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              Daisy Fleabane grows between one and three feet tall. Its small
-              flowers look like daisies with a yellow center and thin white
-              peals.
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.illinoiswildflowers.info/prairie/plantx/ds_fleabanex.htm"
+                }
+              >
+                Daisy Fleabane
+              </Link>{" "}
+              grows between one and three feet tall. Its small flowers look like
+              daisies with a yellow center and thin white peals.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -291,8 +319,16 @@ export function Explore(_props: any) {
             {/* Add the Fifth Bird image */}
             <Image source={horsetailImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              Horsetail has a jointed stem that bears a cone. The cone releases
-              spores to the wind.
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.illinoiswildflowers.info/grasses/plants/cm_horsetail.htm"
+                }
+              >
+                Horsetail
+              </Link>{" "}
+              has a jointed stem that bears a cone. The cone releases spores to
+              the wind.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -317,9 +353,16 @@ export function Explore(_props: any) {
             {/* Add the Sixth Bird image */}
             <Image source={joepyeImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              Joe Pye Weed produces large, pink flowerheads that attract
-              pollinators. It grows in moist soil, so it is often found in
-              marshes.
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.illinoiswildflowers.info/wetland/plants/sp_joepye.htm"
+                }
+              >
+                Joe Pye Weed
+              </Link>{" "}
+              produces large, pink flowerheads that attract pollinators. It
+              grows in moist soil, so it is often found in marshes.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -344,8 +387,17 @@ export function Explore(_props: any) {
             {/* Add the Seventh Bird image */}
             <Image source={newenglandImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The New England Aster can grow up to four feet tall. Its lavender
-              flowers have gold centers and bloom in late summer.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.illinoiswildflowers.info/prairie/plantx/ne_asterx.htm"
+                }
+              >
+                New England Aster
+              </Link>{" "}
+              can grow up to four feet tall. Its lavender flowers have gold
+              centers and bloom in late summer.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -370,8 +422,16 @@ export function Explore(_props: any) {
             {/* Add the Eighth Bird image */}
             <Image source={phragmitesImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              Phragmites is a tall grass that quickly spreads through wetlands
-              and outcompetes many native wetland species.
+              <Link
+                style={styles.Link}
+                href={
+                  "https://extension.illinois.edu/invasives/invasive-phragmites"
+                }
+              >
+                Phragmites
+              </Link>{" "}
+              is a tall grass that quickly spreads through wetlands and
+              outcompetes many native wetland species.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -396,8 +456,16 @@ export function Explore(_props: any) {
             {/* Add the Ninth Bird image */}
             <Image source={prairieImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              Prairie Coreopsis produces yellow flowers. It grows in full sun in
-              prairies, savannas, and abandoned fields.
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.illinoiswildflowers.info/prairie/plantx/pr_coreopsisx.htm"
+                }
+              >
+                Prairie Coreopsis
+              </Link>{" "}
+              produces yellow flowers. It grows in full sun in prairies,
+              savannas, and abandoned fields.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -422,8 +490,16 @@ export function Explore(_props: any) {
             {/* Add the Tenth Bird image */}
             <Image source={redoakImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              Red Oak trees grow up to 100 feet tall and produce acorns. In
-              fall, red oak trees’ green leaves change to a bright red.
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.illinoiswildflowers.info/trees/plants/red_oak.html"
+                }
+              >
+                Red Oak
+              </Link>{" "}
+              trees grow up to 100 feet tall and produce acorns. In fall, red
+              oak trees’ green leaves change to a bright red.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -448,8 +524,16 @@ export function Explore(_props: any) {
             {/* Add the Eleventh Bird image */}
             <Image source={teaselImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              Teasel is a tall, invasive plant with big seed heads. Each plant
-              can produce thousands of seeds.
+              <Link
+                style={styles.Link}
+                href={
+                  "https://extension.illinois.edu/blogs/know-how-know-more/2017-03-22-beware-invasive-teasel-plant"
+                }
+              >
+                Teasel
+              </Link>{" "}
+              is a tall, invasive plant with big seed heads. Each plant can
+              produce thousands of seeds.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -474,9 +558,17 @@ export function Explore(_props: any) {
             {/* Add the Twelfth Bird image */}
             <Image source={wildbergamotImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              A native plant, Wild Bergamot produces tufted pink or lavender
-              flowers that attract bees and butterflies. Its leaves smell a bit
-              like oregano.
+              A native plant,{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.illinoiswildflowers.info/prairie/plantx/wld_bergamotx.htm"
+                }
+              >
+                Wild Bergamot
+              </Link>{" "}
+              produces tufted pink or lavender flowers that attract bees and
+              butterflies. Its leaves smell a bit like oregano.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -566,7 +658,7 @@ const styles = StyleSheet.create({
   //picture's size
   modalImage: {
     width: 320, // Adjust the width as needed
-    height: 300, // Adjust the height as needed
+    height: 266, // Adjust the height as needed
     resizeMode: "cover",
     borderRadius: 10,
     marginBottom: 10,

@@ -54,7 +54,6 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 24,
-    fontFamily: "lucida-grande",
     fontWeight: "bold",
     color: "darkgreen",
     textAlign: "center",
@@ -73,7 +72,7 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   audioNavigateText: {
-    fontSize: 20,
+    fontSize: 19,
     fontWeight: "bold",
     textAlign: "center",
     color: "black",
@@ -88,7 +87,7 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   exploreNavigateText: {
-    fontSize: 20,
+    fontSize: 19,
     fontWeight: "bold",
     textAlign: "center",
     color: "black",
@@ -103,7 +102,7 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   infoNavigateText: {
-    fontSize: 20,
+    fontSize: 19,
     fontWeight: "bold",
     textAlign: "center",
     color: "black",

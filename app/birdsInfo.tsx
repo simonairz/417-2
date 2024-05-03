@@ -663,12 +663,13 @@ const styles = StyleSheet.create({
   modalTitle: {
     fontSize: 25,
     fontWeight: "bold",
+    textAlign: "center",
     marginBottom: 10,
   },
   //picture's size
   modalImage: {
     width: 320, // Adjust the width as needed
-    height: 300, // Adjust the height as needed
+    height: 266, // Adjust the height as needed
     resizeMode: "cover",
     borderRadius: 10,
     marginBottom: 10,
@@ -687,6 +688,7 @@ const styles = StyleSheet.create({
   },
   modalCloseText: {
     color: "white",
+    textAlign: "center",
     fontSize: 16,
     fontWeight: "bold",
   },
