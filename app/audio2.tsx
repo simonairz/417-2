@@ -1,7 +1,8 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
-import { View, Text, ImageBackground, StyleSheet, Button } from "react-native";
+import { View, Text, StyleSheet, Button } from "react-native";
 import { Video } from "expo-av";
+import { Link } from "expo-router";
 
 function Audio2(_props: any) {
   const video = React.useRef(null);
@@ -12,68 +13,74 @@ function Audio2(_props: any) {
   };
 
   return (
-    <ImageBackground
-      style={styles.background}
-      source={require("../assets/images/indigenous.png")}
-    >
-      <View style={styles.container}>
-        <Text style={styles.title}>Indigenous Connections</Text>
-        <View style={styles.buttonContainer}>
-          <Button
-            title="Click below to start listening."
-            onPress={toggleControls}
-            color="#2bf30c" // Adjusted button color
-          />
-        </View>
-        <View style={styles.videoContainer}>
-          <Video
-            ref={video}
-            style={styles.video}
-            source={require("../assets/music/inTheEnd.mp3")}
-            useNativeControls={showControls}
-          />
-        </View>
-
-        <StatusBar style="auto" />
+    <View style={styles.container}>
+      <Text style={styles.title}>Indigenous Connections</Text>
+      <View style={styles.buttonContainer}>
+        <Button
+          title="Click below to start listening."
+          onPress={toggleControls}
+          color="black" // Adjusted button color
+        />
       </View>
-    </ImageBackground>
+      <View style={styles.videoContainer}>
+        <Video
+          ref={video}
+          style={styles.video}
+          source={require("../assets/music/inTheEnd.mp3")}
+          useNativeControls={showControls}
+        />
+      </View>
+      <StatusBar style="auto" />
+      <Link style={styles.navigator} href={"/audioTourMap"}>
+        {" "}
+        Back to Audio Tour Map{" "}
+      </Link>
+    </View>
   );
 }
 
 export default Audio2;
 
 const styles = StyleSheet.create({
-  background: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
   container: {
+    flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    paddingHorizontal: 20,
-    marginBottom: 100,
+    backgroundColor: "#8a9a87",
   },
   title: {
-    fontSize: 22,
+    fontSize: 26,
     fontWeight: "bold",
-    marginTop: 5,
-    marginBottom: 200,
-    color: "white",
+    textAlign: "center",
+    marginBottom: 60,
+    marginTop: 40,
   },
   buttonContainer: {
-    marginBottom: 8,
-    fontWeight: "bold",
-    marginTop: 5,
+    marginBottom: 5,
   },
   videoContainer: {
-    width: "90%",
+    width: "100%",
     aspectRatio: 16 / 9,
-    borderRadius: 20,
     overflow: "hidden",
-    elevation: 100,
+    elevation: 6,
+    backgroundColor: "#5d6d5d",
+    marginTop: 5,
   },
   video: {
     flex: 1,
+  },
+  navigator: {
+    backgroundColor: "lightblue",
+    color: "black",
+    borderRadius: 20,
+    fontSize: 16,
+    textAlign: "center",
+    fontWeight: "bold",
+    alignSelf: "center",
+    paddingVertical: 12,
+    paddingHorizontal: 12,
+    overflow: "hidden",
+    marginBottom: 10,
+    marginTop: 180,
   },
 });

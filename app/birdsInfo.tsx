@@ -171,9 +171,9 @@ export function Explore(_props: any) {
         </TouchableOpacity>
       </ScrollView>
 
-      <Link style={styles.navigator} href={"/"}>
+      <Link style={styles.navigator} href={"/explore"}>
         {" "}
-        Back To Home Page{" "}
+        Back to Explore Wildlife{" "}
       </Link>
 
       {/* Modal to display American Crow information */}
@@ -189,9 +189,16 @@ export function Explore(_props: any) {
             {/* Add the American Crow image */}
             <Image source={firstBirdImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The American crow is a large, intelligent bird known for its
-              adaptability and distinctive cawing sound. It is found throughout
-              North America and is often seen in urban and suburban areas.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={"https://www.allaboutbirds.org/guide/American_Crow/"}
+              >
+                American crow
+              </Link>{" "}
+              is a large, intelligent bird known for its adaptability and
+              distinctive cawing sound. It is found throughout North America and
+              is often seen in urban and suburban areas.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -216,9 +223,15 @@ export function Explore(_props: any) {
             {/* Add the Another Bird image */}
             <Image source={secondBirdImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The American Goldfinch is often found in open areas near thistle
-              plants. Listen for its flight call, which sounds like,
-              “po-ta-to-chip.”
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={"https://www.allaboutbirds.org/guide/American_Goldfinch/"}
+              >
+                American Goldfinch
+              </Link>{" "}
+              is often found in open areas near thistle plants. Listen for its
+              flight call, which sounds like, “po-ta-to-chip.”
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -243,9 +256,16 @@ export function Explore(_props: any) {
             {/* Add the Third Bird image */}
             <Image source={thirdBirdImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The American Robin is known as the harbinger of spring. You may
-              find this orange-breasted bird hunting for earthworms, or sitting
-              in a tree chirping, “cheerily cheer up.”
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={"https://www.allaboutbirds.org/guide/American_Robin/"}
+              >
+                American Robin
+              </Link>{" "}
+              is known as the harbinger of spring. You may find this
+              orange-breasted bird hunting for earthworms, or sitting in a tree
+              chirping, “cheerily cheer up.”
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -270,8 +290,17 @@ export function Explore(_props: any) {
             {/* Add the Fourth Bird image */}
             <Image source={fourthBirdImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The brightly-colored Baltimore Oriole sings a whistling song. It
-              eats fruit and weaves a nest that hangs high off the ground.
+              The brightly-colored{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.allaboutbirds.org/guide/Black-capped_Chickadee"
+                }
+              >
+                Baltimore Oriole
+              </Link>{" "}
+              sings a whistling song. It eats fruit and weaves a nest that hangs
+              high off the ground.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -296,10 +325,19 @@ export function Explore(_props: any) {
             {/* Add the Fifth Bird image */}
             <Image source={fifthBirdImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The Black-capped Chickadee is a tiny bird with a black cap and
-              bib. Known for its “chicka-dee-dee-dee” call, the bird often hides
-              seeds to eat later. You may see a chickadee hanging upside down on
-              a tree branch.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.allaboutbirds.org/guide/Black-capped_Chickadee"
+                }
+              >
+                Black-capped Chickadee
+              </Link>{" "}
+              is a tiny bird with a black cap and bib. Known for its
+              “chicka-dee-dee-dee” call, the bird often hides seeds to eat
+              later. You may see a chickadee hanging upside down on a tree
+              branch.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -324,9 +362,17 @@ export function Explore(_props: any) {
             {/* Add the Sixth Bird image */}
             <Image source={sixthBirdImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The Brown-headed Cowbird lays its eggs in the nests of other
-              birds, leaving its young to be raised by other species. Look for
-              it in fields and meadows..
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.allaboutbirds.org/guide/Brown-headed_Cowbird/"
+                }
+              >
+                Brown-headed Cowbird
+              </Link>{" "}
+              lays its eggs in the nests of other birds, leaving its young to be
+              raised by other species. Look for it in fields and meadows..
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -351,9 +397,17 @@ export function Explore(_props: any) {
             {/* Add the Seventh Bird image */}
             <Image source={seventhBirdImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The Common Grackle is found in open woodlands and marshes. The
-              species is taller and has a longer tail than other similar-looking
-              birds.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.allaboutbirds.org/guide/Common_Grackle/overview"
+                }
+              >
+                Common Grackle
+              </Link>{" "}
+              is found in open woodlands and marshes. The species is taller and
+              has a longer tail than other similar-looking birds.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -378,9 +432,16 @@ export function Explore(_props: any) {
             {/* Add the Eighth Bird image */}
             <Image source={eighthBirdImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The European Starling was first brought to New York by Shakespeare
-              enthusiasts. The birds are now found across the country, and often
-              move in large, noisy flocks.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={"https://www.allaboutbirds.org/guide/European_Starling/"}
+              >
+                European Starling
+              </Link>{" "}
+              was first brought to New York by Shakespeare enthusiasts. The
+              birds are now found across the country, and often move in large,
+              noisy flocks.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -405,9 +466,16 @@ export function Explore(_props: any) {
             {/* Add the Ninth Bird image */}
             <Image source={ninthBirdImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The House Sparrow is frequently found at backyard feeders, and
-              often nests in manmade structures, like the eaves of buildings or
-              in street lights.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={"https://www.allaboutbirds.org/guide/house_sparrow"}
+              >
+                House Sparrow
+              </Link>{" "}
+              is frequently found at backyard feeders, and often nests in
+              manmade structures, like the eaves of buildings or in street
+              lights.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -432,10 +500,16 @@ export function Explore(_props: any) {
             {/* Add the Tenth Bird image */}
             <Image source={tenthBirdImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The male Northern Cardinal is an eye-catching bright red, while
-              the female is mostly brown. Both have a sharp crest and may sound
-              as if they’re saying, “Cheer! Cheer! Cheer!” or “Birdie, birdie,
-              birdie!”
+              The male{" "}
+              <Link
+                style={styles.Link}
+                href={"https://www.allaboutbirds.org/guide/Northern_Cardinal"}
+              >
+                Northern Cardinal
+              </Link>{" "}
+              is an eye-catching bright red, while the female is mostly brown.
+              Both have a sharp crest and may sound as if they’re saying,
+              “Cheer! Cheer! Cheer!” or “Birdie, birdie, birdie!”
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -460,9 +534,15 @@ export function Explore(_props: any) {
             {/* Add the Eleventh Bird image */}
             <Image source={eleventhBirdImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              Look for the Red-tailed Hawk soaring above open fields, where it
-              hunts for voles and rabbits. Notice its broad wings and short
-              tail.
+              Look for the{" "}
+              <Link
+                style={styles.Link}
+                href={"https://www.allaboutbirds.org/guide/Red-tailed_Hawk/"}
+              >
+                Red-tailed Hawk
+              </Link>{" "}
+              soaring above open fields, where it hunts for voles and rabbits.
+              Notice its broad wings and short tail.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -487,9 +567,18 @@ export function Explore(_props: any) {
             {/* Add the Twelfth Bird image */}
             <Image source={twelfthBirdImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The Red-winged Blackbird is common in the DRNA and other wetlands
-              across the U.S. Look for the male’s red and yellow shoulder
-              patches, and listen for its conk-la-lee song.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.allaboutbirds.org/guide/Red-winged_Blackbird/"
+                }
+              >
+                Red-winged Blackbird
+              </Link>{" "}
+              is common in the DRNA and other wetlands across the U.S. Look for
+              the male’s red and yellow shoulder patches, and listen for its
+              conk-la-lee song.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -515,11 +604,10 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    marginTop: 25,
+    marginTop: 20,
     marginBottom: 10,
-    fontSize: 23,
+    fontSize: 25,
     fontWeight: "bold",
-    textAlign: "center",
   },
 
   button: {
@@ -527,13 +615,10 @@ const styles = StyleSheet.create({
     color: "white",
     paddingVertical: 10,
     fontSize: 13,
-    //fontWeight: "bold",
     borderRadius: 15,
     marginTop: 25,
-    width: 150,
+    width: 180,
     textAlign: "center",
-    //height: 70,
-    //width: 200,
   },
 
   buttonText: {
@@ -542,25 +627,37 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     maxWidth: "100%",
-    overflow: "visible",
+    overflow: "hidden",
   },
-  modalImage1: {
-    alignItems: "flex-start",
-    width: 160, // Adjust the width as needed
-    height: 90, // Adjust the height as needed
+
+  buttonText2: {
+    color: "black",
+    fontSize: 25,
+    fontWeight: "bold",
+    textAlign: "center",
+    maxWidth: "150%",
+    overflow: "hidden",
+    marginBottom: 5,
   },
+
   modalContainer: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "rgba(0, 0, 0, 0.5)",
   },
+  modalImage1: {
+    alignItems: "flex-start",
+    width: 180, // Adjust the width as needed
+    height: 104, // Adjust the height as needed
+  },
   modalContent: {
     backgroundColor: "lightpink",
     padding: 20,
-    borderRadius: 10,
+    fontSize: 25,
+    borderRadius: 15,
     alignItems: "center",
-    overflow: "visible",
+    overflow: "hidden",
   },
   //picture's title
   modalTitle: {
@@ -570,14 +667,14 @@ const styles = StyleSheet.create({
   },
   //picture's size
   modalImage: {
-    width: 200, // Adjust the width as needed
-    height: 200, // Adjust the height as needed
+    width: 320, // Adjust the width as needed
+    height: 300, // Adjust the height as needed
     resizeMode: "cover",
     borderRadius: 10,
     marginBottom: 10,
   },
   modalText: {
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: "bold",
     textAlign: "left",
   },
@@ -593,12 +690,22 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "bold",
   },
+  Link: {
+    fontWeight: "bold",
+    color: "red",
+    fontSize: 20,
+    textDecorationLine: "underline",
+  },
   navigator: {
     backgroundColor: "lightblue",
     color: "black",
+    borderRadius: 20,
+    fontSize: 16,
+    textAlign: "center",
+    fontWeight: "bold",
+    alignSelf: "center",
     paddingVertical: 12,
     paddingHorizontal: 12,
-    borderRadius: 20,
     overflow: "hidden",
     marginBottom: 20,
     marginTop: 10,

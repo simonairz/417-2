@@ -30,7 +30,7 @@ function explore(_props: any) {
 
       <Link style={styles.navigate} href={"/"}>
         {" "}
-        Back To Home Page{" "}
+        Back to Home Page{" "}
       </Link>
     </LinearGradient>
   );
@@ -66,12 +66,16 @@ const styles = StyleSheet.create({
   navigate: {
     backgroundColor: "lightblue",
     color: "black",
+    borderRadius: 20,
+    fontSize: 16,
+    textAlign: "center",
+    fontWeight: "bold",
+    alignSelf: "center",
     paddingVertical: 12,
     paddingHorizontal: 12,
-    borderRadius: 20,
-    overflow: "scroll",
-    marginBottom: 20,
-    marginTop: 97,
+    overflow: "hidden",
+    marginBottom: 100,
+    marginTop: 90,
   },
 });
 

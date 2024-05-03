@@ -35,11 +35,6 @@ function index(_props: any) {
           <Text style={styles.privacyText}>Privacy Policy</Text>
         </Link>
       </View>
-      <View style={styles.termsContainer}>
-        <Link style={styles.termsText} href={"/terms"}>
-          <Text style={styles.termsText}>Terms of Use</Text>
-        </Link>
-      </View>
     </LinearGradient>
   );
 }
@@ -51,32 +46,34 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   logo: {
-    width: 180, // Adjust the width and height as needed
-    height: 180,
-    marginBottom: 15,
-    //marginTop: 1,
+    width: 270, // Adjust the width and height as needed
+    height: 260,
+    marginBottom: 1,
+    marginTop: 1,
     resizeMode: "contain", // Adjust the resizeMode as needed
   },
   title: {
-    fontSize: 22,
+    fontSize: 24,
+    fontFamily: "lucida-grande",
     fontWeight: "bold",
     color: "darkgreen",
     textAlign: "center",
     overflow: "hidden",
-    marginBottom: 40,
-    //marginTop: 1, // Adjusted marginTop to make the title stand out at the top
+    marginBottom: 10,
+    marginTop: 1, // Adjusted marginTop to make the title stand out at the top
   },
+
   audioNavigate: {
     backgroundColor: "lightgreen",
     paddingVertical: 16,
-    paddingHorizontal: 18,
-    borderRadius: 28,
+    paddingHorizontal: 16,
+    borderRadius: 24,
     overflow: "hidden",
     marginBottom: 10,
     marginTop: 2,
   },
   audioNavigateText: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: "bold",
     textAlign: "center",
     color: "black",
@@ -84,14 +81,14 @@ const styles = StyleSheet.create({
   exploreNavigate: {
     backgroundColor: "lightgreen",
     paddingVertical: 16,
-    paddingHorizontal: 18,
-    borderRadius: 28,
+    paddingHorizontal: 16,
+    borderRadius: 24,
     overflow: "hidden",
     marginBottom: 10,
     marginTop: 2,
   },
   exploreNavigateText: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: "bold",
     textAlign: "center",
     color: "black",
@@ -99,42 +96,28 @@ const styles = StyleSheet.create({
   infoNavigate: {
     backgroundColor: "lightgreen",
     paddingVertical: 16,
-    paddingHorizontal: 18,
-    borderRadius: 30,
-    overflow: "visible",
-    marginBottom: 20,
+    paddingHorizontal: 16,
+    borderRadius: 24,
+    overflow: "hidden",
+    marginBottom: 10,
     marginTop: 2,
   },
   infoNavigateText: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: "bold",
     textAlign: "center",
     color: "black",
   },
   privacyContainer: {
     marginBottom: 2,
-    marginTop: 15,
+    marginTop: 5,
     alignItems: "flex-start",
   },
 
   privacyText: {
     color: "black",
     textDecorationLine: "underline",
-    fontSize: 12,
-    fontWeight: "bold",
-  },
-
-  termsContainer: {
-    marginBottom: 2,
-    marginTop: 5,
-    alignItems: "flex-start",
-    // flexDirection: "row",
-  },
-
-  termsText: {
-    color: "black",
-    textDecorationLine: "underline",
-    fontSize: 12,
+    fontSize: 18,
     fontWeight: "bold",
   },
 });

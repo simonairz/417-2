@@ -12,7 +12,6 @@ const Layout = () => (
     <Stack.Screen name="insectsInfo" options={{ title: "Explore Wildlife" }} />
     <Stack.Screen name="plantsInfo" options={{ title: "Explore Wildlife" }} />
     <Stack.Screen name="privacy" options={{ title: " " }} />
-    <Stack.Screen name="terms" options={{ title: " " }} />
     <Stack.Screen name="audio1" options={{ title: " Dunning Read " }} />
     <Stack.Screen name="audio2" options={{ title: " Dunning Read " }} />
     <Stack.Screen name="audio3" options={{ title: " Dunning Read " }} />

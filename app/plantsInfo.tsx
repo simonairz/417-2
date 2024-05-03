@@ -165,9 +165,9 @@ export function Explore(_props: any) {
         </TouchableOpacity>
       </ScrollView>
 
-      <Link style={styles.navigator} href={"/"}>
+      <Link style={styles.navigator} href={"/explore"}>
         {" "}
-        Back To Home Page{" "}
+        Back to Explore Wildlife{" "}
       </Link>
 
       {/* Modal to display American Crow information */}
@@ -317,7 +317,7 @@ export function Explore(_props: any) {
             {/* Add the Sixth Bird image */}
             <Image source={joepyeImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              Joe Pye Weed produces large, pink flower heads that attract
+              Joe Pye Weed produces large, pink flowerheads that attract
               pollinators. It grows in moist soil, so it is often found in
               marshes.
             </Text>
@@ -371,7 +371,7 @@ export function Explore(_props: any) {
             <Image source={phragmitesImage} style={styles.modalImage} />
             <Text style={styles.modalText}>
               Phragmites is a tall grass that quickly spreads through wetlands
-              and out competes many native wetland species.
+              and outcompetes many native wetland species.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -504,15 +504,8 @@ const styles = StyleSheet.create({
   title: {
     marginTop: 20,
     marginBottom: 10,
-    fontSize: 23,
+    fontSize: 25,
     fontWeight: "bold",
-  },
-
-  centeredView: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "rgba(0,0,0,0.5)",
   },
 
   button: {
@@ -522,7 +515,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
     borderRadius: 15,
     marginTop: 25,
-    width: 150,
+    width: 180,
     textAlign: "center",
   },
 
@@ -535,6 +528,16 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
 
+  buttonText2: {
+    color: "black",
+    fontSize: 25,
+    fontWeight: "bold",
+    textAlign: "center",
+    maxWidth: "150%",
+    overflow: "hidden",
+    marginBottom: 5,
+  },
+
   modalContainer: {
     flex: 1,
     justifyContent: "center",
@@ -543,17 +546,14 @@ const styles = StyleSheet.create({
   },
   modalImage1: {
     alignItems: "flex-start",
-    width: 150, // Adjust the width as needed
-    height: 94, // Adjust the height as needed
-    marginBottom: 0,
-    marginTop: 10,
-    resizeMode: "cover",
-    borderRadius: 10,
+    width: 180, // Adjust the width as needed
+    height: 104, // Adjust the height as needed
   },
   modalContent: {
     backgroundColor: "lightpink",
     padding: 20,
-    borderRadius: 10,
+    fontSize: 25,
+    borderRadius: 15,
     alignItems: "center",
     overflow: "hidden",
   },
@@ -565,14 +565,14 @@ const styles = StyleSheet.create({
   },
   //picture's size
   modalImage: {
-    width: 200, // Adjust the width as needed
-    height: 200, // Adjust the height as needed
+    width: 320, // Adjust the width as needed
+    height: 300, // Adjust the height as needed
     resizeMode: "cover",
     borderRadius: 10,
     marginBottom: 10,
   },
   modalText: {
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: "bold",
     textAlign: "left",
   },
@@ -588,13 +588,22 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "bold",
   },
-
+  Link: {
+    fontWeight: "bold",
+    color: "red",
+    fontSize: 20,
+    textDecorationLine: "underline",
+  },
   navigator: {
     backgroundColor: "lightblue",
     color: "black",
+    borderRadius: 20,
+    fontSize: 16,
+    textAlign: "center",
+    fontWeight: "bold",
+    alignSelf: "center",
     paddingVertical: 12,
     paddingHorizontal: 12,
-    borderRadius: 20,
     overflow: "hidden",
     marginBottom: 20,
     marginTop: 10,

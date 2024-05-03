@@ -28,16 +28,7 @@ export function Explore(_props: any) {
 
         <Text style={styles.missionHeader}> Operating Hours</Text>
         <Text style={styles.missionContent}>
-          Natural Areas are open from dawn to dusk daily!
-        </Text>
-
-        <Text style={styles.missionHeader}> Community </Text>
-        <Text style={styles.missionContent}>
-          The DRNA PAC is part of a thriving Northwest side community, and over
-          the years, numerous local stakeholders have contributed to the
-          betterment of the natural area. We collaborate with the following
-          partners whenever possible, and are appreciative of their
-          contributions to the site.
+          The Dunning Read Natural Area are open from dawn to dusk daily!
         </Text>
 
         <Text style={styles.missionHeader}> Volunteer With Us</Text>
@@ -78,7 +69,7 @@ const styles = StyleSheet.create({
   title: {
     marginTop: 10,
     marginBottom: 10,
-    fontSize: 18,
+    fontSize: 25,
     fontWeight: "bold",
     color: "white",
     alignItems: "center",
@@ -87,7 +78,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     color: "black",
     fontWeight: "bold",
-    fontSize: 15,
+    fontSize: 25,
     textAlign: "center",
     alignItems: "center",
     textDecorationLine: "underline",
@@ -96,23 +87,25 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginHorizontal: 15,
     color: "black",
-    fontSize: 15,
+    fontSize: 25,
     textAlign: "left",
     alignItems: "center",
   },
   volunteerLink: {
     fontWeight: "bold",
     color: "red",
-    fontSize: 15,
+    fontSize: 25,
     textDecorationLine: "underline",
   },
 
   indexNavigator: {
     backgroundColor: "lightblue",
     color: "black",
+    fontSize: 20,
     paddingVertical: 12,
     paddingHorizontal: 12,
     borderRadius: 20,
+    fontWeight: "bold",
     overflow: "hidden",
     marginBottom: 20,
     marginTop: 10,

@@ -201,9 +201,9 @@ function Explore(_props: any) {
         </TouchableOpacity>
       </ScrollView>
 
-      <Link style={styles.navigator} href={"/"}>
+      <Link style={styles.navigator} href={"/explore"}>
         {" "}
-        Back To Home Page{" "}
+        Back to Explore Wildlife{" "}
       </Link>
 
       <Modal
@@ -531,21 +531,10 @@ const styles = StyleSheet.create({
   title: {
     marginTop: 20,
     marginBottom: 10,
-    fontSize: 23,
+    fontSize: 25,
     fontWeight: "bold",
   },
-  modalImage1: {
-    alignItems: "flex-start",
-    width: 150, // Adjust the width as needed
-    height: 94, // Adjust the height as needed
-  },
 
-  centeredView: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "rgba(0,0,0,0.5)",
-  },
   button: {
     backgroundColor: "blue",
     color: "white",
@@ -553,9 +542,10 @@ const styles = StyleSheet.create({
     fontSize: 13,
     borderRadius: 15,
     marginTop: 25,
-    width: 150,
+    width: 180,
     textAlign: "center",
   },
+
   buttonText: {
     color: "white",
     fontSize: 18,
@@ -564,16 +554,33 @@ const styles = StyleSheet.create({
     maxWidth: "100%",
     overflow: "hidden",
   },
+
+  buttonText2: {
+    color: "black",
+    fontSize: 25,
+    fontWeight: "bold",
+    textAlign: "center",
+    maxWidth: "150%",
+    overflow: "hidden",
+    marginBottom: 5,
+  },
+
   modalContainer: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "rgba(0, 0, 0, 0.5)",
   },
+  modalImage1: {
+    alignItems: "flex-start",
+    width: 180, // Adjust the width as needed
+    height: 104, // Adjust the height as needed
+  },
   modalContent: {
     backgroundColor: "lightpink",
     padding: 20,
-    borderRadius: 10,
+    fontSize: 25,
+    borderRadius: 15,
     alignItems: "center",
     overflow: "hidden",
   },
@@ -585,14 +592,14 @@ const styles = StyleSheet.create({
   },
   //picture's size
   modalImage: {
-    width: 200, // Adjust the width as needed
-    height: 200, // Adjust the height as needed
+    width: 320, // Adjust the width as needed
+    height: 300, // Adjust the height as needed
     resizeMode: "cover",
     borderRadius: 10,
     marginBottom: 10,
   },
   modalText: {
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: "bold",
     textAlign: "left",
   },
@@ -608,12 +615,22 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "bold",
   },
+  Link: {
+    fontWeight: "bold",
+    color: "red",
+    fontSize: 20,
+    textDecorationLine: "underline",
+  },
   navigator: {
     backgroundColor: "lightblue",
     color: "black",
+    borderRadius: 20,
+    fontSize: 16,
+    textAlign: "center",
+    fontWeight: "bold",
+    alignSelf: "center",
     paddingVertical: 12,
     paddingHorizontal: 12,
-    borderRadius: 20,
     overflow: "hidden",
     marginBottom: 20,
     marginTop: 10,

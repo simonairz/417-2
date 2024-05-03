@@ -4,7 +4,7 @@ import MapView, {
   PROVIDER_GOOGLE,
   Region,
 } from "react-native-maps";
-import { markers, mapFocus } from "../assets/markers";
+//import { markers, mapFocus } from "../assets/markers";
 import { Alert, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 

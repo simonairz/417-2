@@ -163,15 +163,27 @@ export default function App() {
 						</Callout> */}
           </Marker>
         ))}
-
-        <Polygon
-          // VISUAL OF AREA POLYGONS
-          strokeColor="red"
-          fillColor="blue"
-          strokeWidth={2}
-          coordinates={area1}
-        />
       </MapView>
+      <Link style={styles.navigator} href={"/"}>
+        {" "}
+        Back to Home Page{" "}
+      </Link>
     </View>
   );
 }
+const styles = StyleSheet.create({
+  navigator: {
+    backgroundColor: "lightblue",
+    color: "black",
+    borderRadius: 20,
+    fontSize: 16,
+    textAlign: "center",
+    fontWeight: "bold",
+    alignSelf: "center",
+    paddingVertical: 12,
+    paddingHorizontal: 12,
+    overflow: "hidden",
+    marginTop: 540,
+    width: 200,
+  },
+});

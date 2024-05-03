@@ -22,6 +22,7 @@ export const mapFocus = {
   latitudeDelta: 0.01,
   longitudeDelta: 0.01,
 };
+
 export const markers = [
   {
     latitude: 41.954111,

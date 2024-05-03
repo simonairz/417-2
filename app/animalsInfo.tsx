@@ -189,7 +189,7 @@ export function Explore(_props: any) {
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={handleButtonPress7}>
-          <Text style={styles.buttonText}>Meadow Animal</Text>
+          <Text style={styles.buttonText}>Meadow Vole</Text>
           <Image source={animal7Image} style={styles.modalImage1} />
         </TouchableOpacity>
 
@@ -214,14 +214,14 @@ export function Explore(_props: any) {
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={handleButtonPress12}>
-          <Text style={styles.buttonText}>Skunk</Text>
+          <Text style={styles.buttonText}>Striped Skunk</Text>
           <Image source={animal12Image} style={styles.modalImage1} />
         </TouchableOpacity>
       </ScrollView>
 
-      <Link style={styles.navigator} href={"/"}>
+      <Link style={styles.navigator} href={"/explore"}>
         {" "}
-        Back To Home Page{" "}
+        Back to Explore Wildlife{" "}
       </Link>
 
       {/* Modal to display American Crow information */}
@@ -233,11 +233,21 @@ export function Explore(_props: any) {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
+            <Text style={styles.buttonText2}>Coyote</Text>
             <Image source={animal1Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The coyote is found in woodlands and prairies across the state. It
-              eats rodents, fruits, and carrots, and tipycally weighs between 20
-              and 40 pounds.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://dnr.illinois.gov/education/wildaboutpages/wildaboutwildmammals/wildaboutmammalscarnivores/wawmcoyote.html"
+                }
+              >
+                Coyote
+              </Link>{" "}
+              is found in woodlands and prairies across the state. It eats
+              rodents, fruits, and carrots, and tipycally weighs between 20 and
+              40 pounds.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -258,10 +268,20 @@ export function Explore(_props: any) {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
+            <Text style={styles.buttonText2}>DeKay's Snake</Text>
             <Image source={animal2Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The DeKay’s Brown Snake is a brown snake that measures roughly a
-              foot long. You may find it under rocks or logs.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://dnr.illinois.gov/education/wildaboutpages/wildaboutsnakes/wasnfamilynatricidae/wasndekaysbrownsnake.html"
+                }
+              >
+                DeKay's Snake
+              </Link>{" "}
+              is a brown snake that measures roughly a foot long. You may find
+              it under rocks or logs.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -282,11 +302,21 @@ export function Explore(_props: any) {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
+            <Text style={styles.buttonText2}>Eastern Cottontail</Text>
             <Image source={animal3Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The Eastern Cottontail has brown fur and a white belly and throat.
-              It eats grasses, fruits, seeds, and bark. Look for it in wooded
-              areas and near brush and shrubs.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://dnr.illinois.gov/education/wildaboutpages/wildaboutsnakes/wasnfamilynatricidae/wasndekaysbrownsnake.html"
+                }
+              >
+                Eastern Cottontail
+              </Link>{" "}
+              has brown fur and a white belly and throat. It eats grasses,
+              fruits, seeds, and bark. Look for it in wooded areas and near
+              brush and shrubs.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -307,11 +337,21 @@ export function Explore(_props: any) {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
+            <Text style={styles.buttonText2}>Eastern Gray Squirrel</Text>
             <Image source={animal4Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The Eastern Gray Squirrel has a long, bushy tail that helps it
-              balance when it’s climbing trees. It eats fruit, tree bark,
-              leaves, and nuts, and builds leaf nests in trees.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://dnr.illinois.gov/education/wildaboutpages/wildaboutwildmammals/wildaboutmammalsrodents/wawmeasterngraysquirrel.html"
+                }
+              >
+                Eastern Gray Squirrel
+              </Link>{" "}
+              has a long, bushy tail that helps it balance when it’s climbing
+              trees. It eats fruit, tree bark, leaves, and nuts, and builds leaf
+              nests in trees.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -332,9 +372,19 @@ export function Explore(_props: any) {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
+            <Text style={styles.buttonText2}>Fox Squirrel</Text>
             <Image source={animal5Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The Fox Squirrel is a rust-yellow color, and a long tail. It lives
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://dnr.illinois.gov/education/wildaboutpages/wildaboutwildmammals/wildaboutmammalsrodents/wawmeasternfoxsquirrel.html"
+                }
+              >
+                Fox Squirrel
+              </Link>{" "}
+              Fox Squirrel is a rust-yellow color, and a long tail. It lives
               near oak trees and wooded areas, and eats nuts, fruit, flowers,
               leaves, and insects.
             </Text>
@@ -357,10 +407,20 @@ export function Explore(_props: any) {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
+            <Text style={styles.buttonText2}>Brown Bat</Text>
             <Image source={animal6Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The Little Brown Bat has shiny, brown fur, and wings that are
-              attached to the sides of is feet. It commonly eats insects.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://dnr.illinois.gov/education/wildaboutpages/wildaboutwildmammals/wildaboutmammalsbats/wawmlittlebrownbat.html"
+                }
+              >
+                Little Brown Bat
+              </Link>{" "}
+              has shiny, brown fur, and wings that are attached to the sides of
+              is feet. It commonly eats insects.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -381,11 +441,20 @@ export function Explore(_props: any) {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
+            <Text style={styles.buttonText2}>Meadow Vole</Text>
             <Image source={animal7Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The Meadow Vole is mostly black with some red fur. It burrows
-              underground. Look for it near streams, marshes, or other wet
-              areas. .
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://dnr.illinois.gov/education/wildaboutpages/wildaboutwildmammals/wildaboutmammalsrodents/wawmmeadowvole.html"
+                }
+              >
+                Meadow Vole
+              </Link>{" "}
+              is mostly black with some red fur. It burrows underground. Look
+              for it near streams, marshes, or other wet areas. .
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -406,11 +475,21 @@ export function Explore(_props: any) {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
+            <Text style={styles.buttonText2}>Opossum</Text>
             <Image source={animal8Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The opossum has a hairless tail that helps it balance and an
-              opposable toe on its hind foot that helps it climb. When
-              threatened, it will play dead or hiss.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://dnr.illinois.gov/education/wildaboutpages/wildaboutwildmammals/wildaboutmammalsfurbearers/wawmvirginiaopossum.html"
+                }
+              >
+                Opossum
+              </Link>{" "}
+              has a hairless tail that helps it balance and an opposable toe on
+              its hind foot that helps it climb. When threatened, it will play
+              dead or hiss.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -431,11 +510,21 @@ export function Explore(_props: any) {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
+            <Text style={styles.buttonText2}>Plains Garter Snake</Text>
             <Image source={animal9Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The Plains Garter Snake is black with yellow stripes on its body.
-              It eats frogs, earthworms, and even small mammals and birds. You
-              may see it basking in the sun.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://dnr.illinois.gov/education/wildaboutpages/wildaboutsnakes/wasnfamilynatricidae/wasnplainsgartersnake.html"
+                }
+              >
+                Plains Garter Snake
+              </Link>{" "}
+              is black with yellow stripes on its body. It eats frogs,
+              earthworms, and even small mammals and birds. You may see it
+              basking in the sun.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -456,10 +545,20 @@ export function Explore(_props: any) {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
+            <Text style={styles.buttonText2}>Prairie Crayfish</Text>
             <Image source={animal10Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The Prairie Crayfish digs burrows in wet prairie areas. You may
-              find it near ditches, like the channel that flows across the DRNA.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://dnr.illinois.gov/education/wildaboutpages/wildaboutinvertebrates/wildaboutcrayfish/wacfprairiecrayfish.html"
+                }
+              >
+                Prairie Crayfish
+              </Link>{" "}
+              digs burrows in wet prairie areas. You may find it near ditches,
+              like the channel that flows across the DRNA.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -480,11 +579,21 @@ export function Explore(_props: any) {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
+            <Text style={styles.buttonText2}>Raccoon</Text>
             <Image source={animal11Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The raccoon climbs well and may use a tree cavity for a den. It
-              eats small animals such as mice, as well as nuts, fruit, insects,
-              and garbage.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://dnr.illinois.gov/education/wildaboutpages/wildaboutwildmammals/wildaboutmammalscarnivores/wawmraccoon.html"
+                }
+              >
+                raccoon
+              </Link>{" "}
+              climbs well and may use a tree cavity for a den. It eats small
+              animals such as mice, as well as nuts, fruit, insects, and
+              garbage.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -505,10 +614,20 @@ export function Explore(_props: any) {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
+            <Text style={styles.buttonText2}>Striped Skunk</Text>
             <Image source={animal12Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
-              The Striped Skunk is active at night. When threatened, it will
-              stomp its feet and then may spray its familiar stench.
+              The{" "}
+              <Link
+                style={styles.Link}
+                href={
+                  "https://dnr.illinois.gov/education/wildaboutpages/wildaboutwildmammals/wildaboutmammalscarnivores/wawmstripedskunk.html"
+                }
+              >
+                Striped Skunk
+              </Link>{" "}
+              is active at night. When threatened, it will stomp its feet and
+              then may spray its familiar stench.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -535,15 +654,8 @@ const styles = StyleSheet.create({
   title: {
     marginTop: 20,
     marginBottom: 10,
-    fontSize: 23,
+    fontSize: 25,
     fontWeight: "bold",
-  },
-
-  centeredView: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "rgba(0,0,0,0.5)",
   },
 
   button: {
@@ -553,7 +665,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
     borderRadius: 15,
     marginTop: 25,
-    width: 150,
+    width: 180,
     textAlign: "center",
   },
 
@@ -566,6 +678,16 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
 
+  buttonText2: {
+    color: "black",
+    fontSize: 25,
+    fontWeight: "bold",
+    textAlign: "center",
+    maxWidth: "150%",
+    overflow: "hidden",
+    marginBottom: 5,
+  },
+
   modalContainer: {
     flex: 1,
     justifyContent: "center",
@@ -574,13 +696,14 @@ const styles = StyleSheet.create({
   },
   modalImage1: {
     alignItems: "flex-start",
-    width: 150, // Adjust the width as needed
-    height: 94, // Adjust the height as needed
+    width: 180, // Adjust the width as needed
+    height: 104, // Adjust the height as needed
   },
   modalContent: {
     backgroundColor: "lightpink",
     padding: 20,
-    borderRadius: 10,
+    fontSize: 25,
+    borderRadius: 15,
     alignItems: "center",
     overflow: "hidden",
   },
@@ -592,14 +715,14 @@ const styles = StyleSheet.create({
   },
   //picture's size
   modalImage: {
-    width: 200, // Adjust the width as needed
-    height: 200, // Adjust the height as needed
+    width: 320, // Adjust the width as needed
+    height: 300, // Adjust the height as needed
     resizeMode: "cover",
     borderRadius: 10,
     marginBottom: 10,
   },
   modalText: {
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: "bold",
     textAlign: "left",
   },
@@ -615,12 +738,22 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "bold",
   },
+  Link: {
+    fontWeight: "bold",
+    color: "red",
+    fontSize: 20,
+    textDecorationLine: "underline",
+  },
   navigator: {
     backgroundColor: "lightblue",
     color: "black",
+    borderRadius: 20,
+    fontSize: 16,
+    textAlign: "center",
+    fontWeight: "bold",
+    alignSelf: "center",
     paddingVertical: 12,
     paddingHorizontal: 12,
-    borderRadius: 20,
     overflow: "hidden",
     marginBottom: 20,
     marginTop: 10,
