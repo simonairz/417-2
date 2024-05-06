@@ -16,6 +16,11 @@ const App = () => {
     const initialRegion = calculateMapRegion();
     setMapRegion(initialRegion);
 
+    const focusMap = () => {
+      if (mapRegion) {
+        mapRef.current?.animateToRegion(mapRegion);
+      }
+    };
     navigation.setOptions({
       headerRight: () => (
         <TouchableOpacity onPress={focusMap}>
@@ -53,12 +58,6 @@ const App = () => {
     };
 
     return region;
-  };
-
-  const focusMap = () => {
-    if (mapRegion) {
-      mapRef.current?.animateToRegion(mapRegion);
-    }
   };
 
   const onMarkerSelected = (marker: any) => {
