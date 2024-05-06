@@ -3,6 +3,9 @@ import MapView, { Marker, PROVIDER_GOOGLE, Region } from "react-native-maps";
 import { Alert, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { Link, router, useNavigation } from "expo-router";
 import { markers, mapFocus } from "../assets/markers";
+import * as Location from "expo-location";
+import * as geolib from "geolib";
+import { GeolibInputCoordinates } from "geolib/es/types";
 
 const App = () => {
   const [audioPlaying, setAudioPlaying] = useState(false);
@@ -60,6 +63,25 @@ const App = () => {
     return region;
   };
 
+  // GET USER LOCATION  for Android Requires Expo Location 2
+
+  const userLocation = async () => {
+    //Requesting Permission for Location Android needs this
+    let { status } = await Location.requestForegroundPermissionsAsync();
+    if (status !== "granted") {
+      Alert.alert("GPS functionality turned off");
+      console.log(status);
+    }
+    let location = await Location.getCurrentPositionAsync();
+    let setUpMapRegion = () => ({
+      latiude: location.coords.latitude,
+      longitude: location.coords.longitude,
+      latitudeDelta: 0.01,
+      longitudeDelta: 0.01,
+    });
+  };
+
+  userLocation();
   const onMarkerSelected = (marker: any) => {
     setAudioPlaying(true); // Set audio playing state to true when marker is selected
     Alert.alert(
@@ -70,7 +92,7 @@ const App = () => {
           text: "Yes",
           onPress: () => {
             router.navigate("/audio" + marker.audioNumber);
-            setAudioPlaying(false); // Set audio playing state to false
+            setAudioPlaying(true); // Set audio playing state to false
           },
         },
         { text: "No" },
@@ -131,7 +153,7 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     paddingHorizontal: 12,
     overflow: "hidden",
-    marginTop: 540,
+    marginTop: 650,
     width: 200,
   },
   instructionContainer: {
