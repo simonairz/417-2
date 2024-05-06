@@ -688,8 +688,8 @@ const styles = StyleSheet.create({
   },
   //picture's size
   modalImage: {
-    width: 320, // Adjust the width as needed
-    height: 266, // Adjust the height as needed
+    width: 420, // Adjust the width as needed
+    height: 270, // Adjust the height as needed
     resizeMode: "cover",
     borderRadius: 10,
     marginBottom: 10,

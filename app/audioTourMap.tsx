@@ -4,8 +4,8 @@ import { Alert, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { Link, router, useNavigation } from "expo-router";
 import { markers, mapFocus } from "../assets/markers";
 import * as Location from "expo-location";
-import * as geolib from "geolib";
-import { GeolibInputCoordinates } from "geolib/es/types";
+//import * as geolib from "geolib";
+//import { GeolibInputCoordinates } from "geolib/es/types";
 
 const App = () => {
   const [audioPlaying, setAudioPlaying] = useState(false);
@@ -40,24 +40,24 @@ const App = () => {
       return mapFocus; // return to map focus if no markers
     }
 
-    let minLat = markers[0].latitude;
-    let maxLat = markers[0].latitude;
-    let minLng = markers[0].longitude;
-    let maxLng = markers[0].longitude;
+    let minL = markers[0].latitude;
+    let maxL = markers[0].latitude;
+    let minLg = markers[0].longitude;
+    let maxLg = markers[0].longitude;
 
     for (let i = 1; i < markers.length; i++) {
-      minLat = Math.min(minLat, markers[i].latitude);
-      maxLat = Math.max(maxLat, markers[i].latitude);
-      minLng = Math.min(minLng, markers[i].longitude);
-      maxLng = Math.max(maxLng, markers[i].longitude);
+      minL = Math.min(minL, markers[i].latitude);
+      maxL = Math.max(maxL, markers[i].latitude);
+      minLg = Math.min(minLg, markers[i].longitude);
+      maxLg = Math.max(maxLg, markers[i].longitude);
     }
 
     const padding = 0.1;
     const region = {
-      latitude: (minLat + maxLat) / 2,
-      longitude: (minLng + maxLng) / 2,
-      latitudeDelta: Math.abs(maxLat - minLat) + padding,
-      longitudeDelta: Math.abs(maxLng - minLng) + padding,
+      latitude: (minL + maxL) / 2,
+      longitude: (minLg + maxLg) / 2,
+      latitudeDelta: Math.abs(maxL - minL) + padding,
+      longitudeDelta: Math.abs(maxLg - minLg) + padding,
     };
 
     return region;
