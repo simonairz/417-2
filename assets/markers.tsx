@@ -15,6 +15,11 @@
 // 		longi0tudeDelta: 0.01,
 // 		name: 'Golden Gate Bridge'
 // 	}
+
+import { setBackgroundColorAsync } from "expo-system-ui";
+import { BackgroundImage } from "react-native-elements/dist/config";
+import { color } from "react-native-elements/dist/helpers";
+
 // ];
 export const mapFocus = {
   latitude: 41.95337,

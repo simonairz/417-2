@@ -6,7 +6,7 @@ import MapView, {
 } from "react-native-maps";
 //import { markers, mapFocus } from "../assets/markers";
 import { Alert, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 
 export function onClickMapMarker(marker: any, index: any) {
   return (
