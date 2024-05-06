@@ -49,7 +49,7 @@ const App = () => {
       maxLng = Math.max(maxLng, markers[i].longitude);
     }
 
-    const padding = 0.1; // Optional padding around markers
+    const padding = 0.1;
     const region = {
       latitude: (minLat + maxLat) / 2,
       longitude: (minLng + maxLng) / 2,
@@ -70,7 +70,7 @@ const App = () => {
           text: "Yes",
           onPress: () => {
             router.navigate("/audio" + marker.audioNumber);
-            setAudioPlaying(false); // Set audio playing state to false when audio navigation occurs
+            setAudioPlaying(false); // Set audio playing state to false
           },
         },
         { text: "No" },
