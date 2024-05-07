@@ -14,7 +14,7 @@ function Audio7(_props: any) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Bringing Back An Oak Savannah</Text>
+      <Text style={styles.title}>Bringing Back an Oak Savannah</Text>
       <View style={styles.buttonContainer}>
         <Button
           title="Click below to start listening."
