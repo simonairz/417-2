@@ -28,16 +28,16 @@ export function Explore(_props: any) {
 
         <Text style={styles.missionHeader}> Operating Hours</Text>
         <Text style={styles.missionContent}>
-          The Dunning Read Natural Area are open from dawn to dusk daily!
+          The Dunning Read Natural Area is open from dawn to dusk daily!
         </Text>
 
         <Text style={styles.missionHeader}> Volunteer With Us</Text>
         <Text style={styles.missionContent}>
-          Volunteer workdays are held at the DRNA from 9am-12pm on the third
+          Volunteer workdays are held at the DRNA from 9am to 12pm on the third
           Saturday of every month. Activities include clearing invasive species,
-          beautification, litter clean up, and other projects.Are you interested
-          in getting involved or being added to our email list? Want to share
-          your thoughts and ideas or ask questions?{" "}
+          beautification, litter clean up, and other projects. Are you
+          interested in getting involved or being added to our email list? Want
+          to share your thoughts and ideas or ask questions?{" "}
           <Link
             style={styles.volunteerLink}
             href={"https://dunningnatural.org/contact/"}
