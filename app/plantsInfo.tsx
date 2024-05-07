@@ -657,7 +657,7 @@ const styles = StyleSheet.create({
   },
   //picture's size
   modalImage: {
-    width: 420, // Adjust the width as needed
+    width: 470, // Adjust the width as needed
     height: 270, // Adjust the height as needed
     resizeMode: "cover",
     borderRadius: 10,
@@ -673,11 +673,11 @@ const styles = StyleSheet.create({
     backgroundColor: "blue",
     paddingVertical: 14,
     paddingHorizontal: 14,
-    borderRadius: 15,
+    borderRadius: 10,
   },
   modalCloseText: {
     color: "white",
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: "bold",
   },
   Link: {
