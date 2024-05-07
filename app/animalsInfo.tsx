@@ -164,7 +164,7 @@ export function Explore(_props: any) {
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={handleButtonPress2}>
-          <Text style={styles.buttonText}>DeKay's Snake</Text>
+          <Text style={styles.buttonText}>DeKay's Brown Snake</Text>
           <Image source={animal2Image} style={styles.modalImage1} />
         </TouchableOpacity>
 
@@ -184,7 +184,7 @@ export function Explore(_props: any) {
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.button} onPress={handleButtonPress6}>
-          <Text style={styles.buttonText}>Brown Bat</Text>
+          <Text style={styles.buttonText}>Little Brown Bat</Text>
           <Image source={animal6Image} style={styles.modalImage1} />
         </TouchableOpacity>
 
@@ -224,7 +224,7 @@ export function Explore(_props: any) {
         Back to Explore Wildlife{" "}
       </Link>
 
-      {/* Modal to display American Crow information */}
+      {/* Modal to display First Animal information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -259,7 +259,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Another Bird information */}
+      {/* Modal to display Second Animal information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -268,7 +268,7 @@ export function Explore(_props: any) {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
-            <Text style={styles.buttonText2}>DeKay's Snake</Text>
+            <Text style={styles.buttonText2}>DeKay's Brown Snake</Text>
             <Image source={animal2Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
               The{" "}
@@ -278,7 +278,7 @@ export function Explore(_props: any) {
                   "https://dnr.illinois.gov/education/wildaboutpages/wildaboutsnakes/wasnfamilynatricidae/wasndekaysbrownsnake.html"
                 }
               >
-                DeKay's Snake
+                DeKay's Brown Snake
               </Link>{" "}
               is a brown snake that measures roughly a foot long. You may find
               it under rocks or logs.
@@ -293,7 +293,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Third Bird information */}
+      {/* Modal to display Third Animal information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -328,7 +328,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Fourth Bird information */}
+      {/* Modal to display Fourth Animal information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -363,7 +363,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Fifth Bird information */}
+      {/* Modal to display Fifth Animal information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -398,7 +398,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Sixth Bird information */}
+      {/* Modal to display Sixth Animal information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -407,7 +407,7 @@ export function Explore(_props: any) {
       >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
-            <Text style={styles.buttonText2}>Brown Bat</Text>
+            <Text style={styles.buttonText2}>Little Brown Bat</Text>
             <Image source={animal6Image} style={styles.modalImage} />
             <Text style={styles.modalText}>
               The{" "}
@@ -432,7 +432,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Seventh Bird information */}
+      {/* Modal to display Seventh Animal information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -466,7 +466,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Eighth Bird information */}
+      {/* Modal to display Eighth Animal information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -501,7 +501,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Ninth Bird information */}
+      {/* Modal to display Ninth Animal information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -536,7 +536,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Tenth Bird information */}
+      {/* Modal to display Tenth Animal information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -570,7 +570,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Eleventh Bird information */}
+      {/* Modal to display Eleventh Animal information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -605,7 +605,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Twelfth Bird information */}
+      {/* Modal to display Twelfth Animal information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -654,7 +654,7 @@ const styles = StyleSheet.create({
   title: {
     marginTop: 20,
     marginBottom: 10,
-    fontSize: 25,
+    fontSize: 35,
     textAlign: "center",
     fontWeight: "bold",
   },
@@ -751,7 +751,7 @@ const styles = StyleSheet.create({
     backgroundColor: "lightblue",
     color: "black",
     borderRadius: 20,
-    fontSize: 16,
+    fontSize: 18,
     textAlign: "center",
     fontWeight: "bold",
     alignSelf: "center",
@@ -759,7 +759,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     overflow: "hidden",
     marginBottom: 20,
-    marginTop: 10,
+    marginTop: 20,
   },
 });
 

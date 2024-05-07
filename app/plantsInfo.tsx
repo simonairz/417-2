@@ -12,7 +12,6 @@ import {
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 
-const ashtreeImage = require("../assets/images/exploreLinks/Ashtree.jpg");
 const bigblueImage = require("../assets/images/exploreLinks/Bigblue.jpg");
 const buckhornImage = require("../assets/images/exploreLinks/Buckthorn.jpg");
 const daisyImage = require("../assets/images/exploreLinks/Daisy.jpg");
@@ -23,10 +22,10 @@ const phragmitesImage = require("../assets/images/exploreLinks/Phragmites.jpg");
 const prairieImage = require("../assets/images/exploreLinks/Prairie.jpg");
 const redoakImage = require("../assets/images/exploreLinks/RedOak.jpg");
 const teaselImage = require("../assets/images/exploreLinks/Teasel.jpg");
+const ashtreeImage = require("../assets/images/exploreLinks/Ashtree.jpg");
 const wildbergamotImage = require("../assets/images/exploreLinks/WildBergamot.jpg");
 
 export function Explore(_props: any) {
-  const [showAshtreeInfo, setShowAshtreeInfo] = useState(false);
   const [showBigblueInfo, setShowBigblueInfo] = useState(false);
   const [ShowBuckhornInfo, setShowBuckhornInfo] = useState(false);
   const [ShowDaisyInfo, setShowDaisyInfo] = useState(false);
@@ -37,11 +36,8 @@ export function Explore(_props: any) {
   const [showPrairieInfo, setShowPrairieInfo] = useState(false);
   const [showRedoakInfo, setShowRedoakInfo] = useState(false);
   const [showTeaselInfo, setShowTeaselInfo] = useState(false);
+  const [showAshtreeInfo, setShowAshtreeInfo] = useState(false);
   const [showWildbergamotInfo, setShowWildbergamotInfo] = useState(false);
-
-  const handleAshtreePress = () => {
-    setShowAshtreeInfo(true);
-  };
 
   const handleBigbluePress = () => {
     setShowBigblueInfo(true);
@@ -83,12 +79,15 @@ export function Explore(_props: any) {
     setShowTeaselInfo(true);
   };
 
+  const handleAshtreePress = () => {
+    setShowAshtreeInfo(true);
+  };
+
   const handleWildbergamotPress = () => {
     setShowWildbergamotInfo(true);
   };
 
   const closeModal = () => {
-    setShowAshtreeInfo(false);
     setShowBigblueInfo(false);
     setShowBuckhornInfo(false);
     setShowDaisyInfo(false);
@@ -99,6 +98,7 @@ export function Explore(_props: any) {
     setShowPrairieInfo(false);
     setShowRedoakInfo(false);
     setShowTeaselInfo(false);
+    setShowAshtreeInfo(false);
     setShowWildbergamotInfo(false);
   };
 
@@ -112,10 +112,6 @@ export function Explore(_props: any) {
         style={styles.scrollView}
         showsVerticalScrollIndicator={false}
       >
-        <TouchableOpacity style={styles.button} onPress={handleAshtreePress}>
-          <Text style={styles.buttonText}>White Ash Tree</Text>
-          <Image source={ashtreeImage} style={styles.modalImage1} />
-        </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={handleBigbluePress}>
           <Text style={styles.buttonText}>Big Bluestem</Text>
           <Image source={bigblueImage} style={styles.modalImage1} />
@@ -156,6 +152,10 @@ export function Explore(_props: any) {
           <Text style={styles.buttonText}>Teasel </Text>
           <Image source={teaselImage} style={styles.modalImage1} />
         </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={handleAshtreePress}>
+          <Text style={styles.buttonText}>White Ash Tree</Text>
+          <Image source={ashtreeImage} style={styles.modalImage1} />
+        </TouchableOpacity>
         <TouchableOpacity
           style={styles.button}
           onPress={handleWildbergamotPress}
@@ -170,41 +170,7 @@ export function Explore(_props: any) {
         Back to Explore Wildlife{" "}
       </Link>
 
-      {/* Modal to display American Crow information */}
-      <Modal
-        animationType="slide"
-        transparent={true}
-        visible={showAshtreeInfo}
-        onRequestClose={closeModal}
-      >
-        <View style={styles.modalContainer}>
-          <View style={styles.modalContent}>
-            <Text style={styles.modalTitle}>White Ash Trees</Text>
-            {/* Add the American Crow image */}
-            <Image source={ashtreeImage} style={styles.modalImage} />
-            <Text style={styles.modalText}>
-              <Link
-                style={styles.Link}
-                href={
-                  "https://www.illinoiswildflowers.info/trees/plants/white_ash.html"
-                }
-              >
-                White Ash Trees
-              </Link>{" "}
-              grow between 50 to 100 feet tall in upload woodlands and city
-              parks. They have leaves that are arranged opposite each other.
-            </Text>
-            <TouchableOpacity
-              style={styles.modalCloseButton}
-              onPress={closeModal}
-            >
-              <Text style={styles.modalCloseText}>Close</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-      </Modal>
-
-      {/* Modal to display Another Bird information */}
+      {/* Modal to display First Plant information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -238,7 +204,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Third Bird information */}
+      {/* Modal to display Second Plant information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -272,7 +238,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Fourth Bird information */}
+      {/* Modal to display Third Plant information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -306,7 +272,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Fifth Bird information */}
+      {/* Modal to display Fourth Plant information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -340,7 +306,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Sixth Bird information */}
+      {/* Modal to display Fifth plant information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -374,7 +340,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Seventh Bird information */}
+      {/* Modal to display Sixth Plant information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -409,7 +375,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Eighth Bird information */}
+      {/* Modal to display Seventh Plant information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -443,7 +409,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Ninth Bird information */}
+      {/* Modal to display Eighth Plant information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -477,7 +443,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Tenth Bird information */}
+      {/* Modal to display Ninth Plant Bird information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -511,7 +477,7 @@ export function Explore(_props: any) {
         </View>
       </Modal>
 
-      {/* Modal to display Eleventh Bird information */}
+      {/* Modal to display Tenth Plant information */}
       <Modal
         animationType="slide"
         transparent={true}
@@ -534,6 +500,39 @@ export function Explore(_props: any) {
               </Link>{" "}
               is a tall, invasive plant with big seed heads. Each plant can
               produce thousands of seeds.
+            </Text>
+            <TouchableOpacity
+              style={styles.modalCloseButton}
+              onPress={closeModal}
+            >
+              <Text style={styles.modalCloseText}>Close</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
+      {/* Modal to display Eleventh Plant information */}
+      <Modal
+        animationType="slide"
+        transparent={true}
+        visible={showAshtreeInfo}
+        onRequestClose={closeModal}
+      >
+        <View style={styles.modalContainer}>
+          <View style={styles.modalContent}>
+            <Text style={styles.modalTitle}>White Ash Trees</Text>
+            {/* Add the American Crow image */}
+            <Image source={ashtreeImage} style={styles.modalImage} />
+            <Text style={styles.modalText}>
+              <Link
+                style={styles.Link}
+                href={
+                  "https://www.illinoiswildflowers.info/trees/plants/white_ash.html"
+                }
+              >
+                White Ash Trees
+              </Link>{" "}
+              grow between 50 to 100 feet tall in upload woodlands and city
+              parks. They have leaves that are arranged opposite each other.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -596,7 +595,8 @@ const styles = StyleSheet.create({
   title: {
     marginTop: 20,
     marginBottom: 10,
-    fontSize: 25,
+    fontSize: 35,
+    textAlign: "center",
     fontWeight: "bold",
   },
 
@@ -642,7 +642,7 @@ const styles = StyleSheet.create({
     height: 104, // Adjust the height as needed
   },
   modalContent: {
-    backgroundColor: "lightpink",
+    backgroundColor: "beige",
     padding: 20,
     fontSize: 25,
     borderRadius: 15,
@@ -690,7 +690,7 @@ const styles = StyleSheet.create({
     backgroundColor: "lightblue",
     color: "black",
     borderRadius: 20,
-    fontSize: 16,
+    fontSize: 18,
     textAlign: "center",
     fontWeight: "bold",
     alignSelf: "center",
@@ -698,7 +698,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     overflow: "hidden",
     marginBottom: 20,
-    marginTop: 10,
+    marginTop: 20,
   },
 });
 

@@ -196,9 +196,9 @@ export function Explore(_props: any) {
               >
                 American crow
               </Link>{" "}
-              is a large, intelligent bird known for its adaptability and
-              distinctive cawing sound. It is found throughout North America and
-              is often seen in urban and suburban areas.
+              is an all-black bird that’s found across most of the U.S. Known
+              for its familiar “caw,” the crow eats almost anything – from seed
+              to insects and even small animals.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -370,7 +370,7 @@ export function Explore(_props: any) {
                 Brown-headed Cowbird
               </Link>{" "}
               lays its eggs in the nests of other birds, leaving its young to be
-              raised by other species. Look for it in fields and meadows..
+              raised by other species. Look for it in fields and meadows.
             </Text>
             <TouchableOpacity
               style={styles.modalCloseButton}
@@ -471,7 +471,7 @@ export function Explore(_props: any) {
               >
                 House Sparrow
               </Link>{" "}
-              is frequently found at backyard feeders, and often nests in
+              is frequently found at backyard feeders, and often nests is
               manmade structures, like the eaves of buildings or in street
               lights.
             </Text>
@@ -604,7 +604,8 @@ const styles = StyleSheet.create({
   title: {
     marginTop: 20,
     marginBottom: 10,
-    fontSize: 25,
+    fontSize: 35,
+    textAlign: "center",
     fontWeight: "bold",
   },
 
@@ -650,7 +651,7 @@ const styles = StyleSheet.create({
     height: 104, // Adjust the height as needed
   },
   modalContent: {
-    backgroundColor: "lightpink",
+    backgroundColor: "lightblue",
     padding: 20,
     fontSize: 25,
     borderRadius: 15,
@@ -700,7 +701,7 @@ const styles = StyleSheet.create({
     backgroundColor: "lightblue",
     color: "black",
     borderRadius: 20,
-    fontSize: 16,
+    fontSize: 18,
     textAlign: "center",
     fontWeight: "bold",
     alignSelf: "center",
@@ -708,7 +709,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     overflow: "hidden",
     marginBottom: 20,
-    marginTop: 10,
+    marginTop: 20,
   },
 });
 

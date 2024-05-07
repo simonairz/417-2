@@ -625,8 +625,8 @@ const styles = StyleSheet.create({
   title: {
     marginTop: 20,
     marginBottom: 10,
+    fontSize: 35,
     textAlign: "center",
-    fontSize: 25,
     fontWeight: "bold",
   },
 
@@ -672,7 +672,7 @@ const styles = StyleSheet.create({
     height: 104, // Adjust the height as needed
   },
   modalContent: {
-    backgroundColor: "lightpink",
+    backgroundColor: "lightyellow",
     padding: 20,
     fontSize: 25,
     borderRadius: 15,
@@ -721,7 +721,7 @@ const styles = StyleSheet.create({
     backgroundColor: "lightblue",
     color: "black",
     borderRadius: 20,
-    fontSize: 16,
+    fontSize: 18,
     textAlign: "center",
     fontWeight: "bold",
     alignSelf: "center",
@@ -729,7 +729,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     overflow: "hidden",
     marginBottom: 20,
-    marginTop: 10,
+    marginTop: 20,
   },
 });
 

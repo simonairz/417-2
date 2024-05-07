@@ -46,20 +46,20 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   logo: {
-    width: 270, // Adjust the width and height as needed
-    height: 260,
+    width: 290, // Adjust the width and height as needed
+    height: 290,
     marginBottom: 1,
     marginTop: 1,
     resizeMode: "contain", // Adjust the resizeMode as needed
   },
   title: {
-    fontSize: 24,
+    fontSize: 30,
     fontWeight: "bold",
     color: "darkgreen",
     textAlign: "center",
     overflow: "hidden",
-    marginBottom: 10,
-    marginTop: 1, // Adjusted marginTop to make the title stand out at the top
+    marginBottom: 40,
+    marginTop: 40, // Adjusted marginTop to make the title stand out at the top
   },
 
   audioNavigate: {
@@ -108,8 +108,8 @@ const styles = StyleSheet.create({
     color: "black",
   },
   privacyContainer: {
-    marginBottom: 2,
-    marginTop: 5,
+    marginBottom: 60,
+    marginTop: 25,
     alignItems: "flex-start",
   },
 
