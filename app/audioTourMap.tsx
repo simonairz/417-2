@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     overflow: "hidden",
     marginTop: 670,
-    width: 200,
+    width: 250,
   },
   instructionContainer: {
     position: "absolute",
